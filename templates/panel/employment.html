@@ -1,0 +1,65 @@
+{% extends 'panel/base.html' %}
+{% load static %}
+{% block title%}
+<title>پنل - خرید و ثبت سفارش</title>
+{% endblock %}
+<div class="employment">
+    <div class="employment--wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <h5 class="panel-title panel-title--2 mb-4">
+                    فرم استخدام
+                </h5>
+            </div>
+            <form class="row justify-content-center justify-content-lg-start">
+                <div class="col-12 col-lg-9 mb-5 mb-lg-0">
+                    <div class="employment--wrapper__form">
+                        <div class="row gx-5 gy-4">
+                            <div class="col-12 col-sm-6">
+                                <label for="fullName" class="form-label">نام و نام خانوادگی</label>
+                                <input type="text" class="form-control" id="fullName">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label for="education" class="form-label">تحصیلات</label>
+                                <input type="text" class="form-control" id="education">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label for="birthDate" class="form-label">تاریخ تولد</label>
+                                <input type="text" class="form-control date1" id="birthDate">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label for="expertise" class="form-label">تخصص / حرفه</label>
+                                <input type="text" class="form-control" id="expertise">
+                            </div>
+                            <div class="col-12">
+                                <label for="work-experience" class="form-label">سابقه کار</label>
+                                <textarea class="form-control" id="work-experience"
+                                          placeholder="اگر سابقه کاری  و یا نکته ایی هست   بنویسید ....."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-lg-3">
+                    <div class="employment--wrapper__send mb-5 text-center d-flex flex-column justify-content-between align-items-center">
+                        <div class="employment--wrapper__send__file">
+                            <h6>بارگذاری مدارک</h6>
+                            <p>
+                                شما میتوانید در این قسمت
+                                عکس و فایل خود را تا
+                                اپلود کنید
+                            </p>
+                            <label for="file-1" class="btn btn-primary upload-button">آپلود فایل</label>
+                            <input type="file" id="file-1" class="d-none">
+                        </div>
+                        <input class="btn btn-primary employment-button d-block mx-auto" type="submit"
+                               value="ارسال مدارک">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% block content %}
+
+{% endblock %}
