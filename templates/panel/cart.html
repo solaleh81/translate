@@ -1,0 +1,123 @@
+{% extends 'panel/base.html' %}
+{% load static %}
+{% block title%}
+<title>پنل - خرید و ثبت سفارش</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="cart">
+    <div class="cart--wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <h5 class="panel-title panel-title--2 mb-4">
+                    سبد خرید
+                </h5>
+            </div>
+            <div class="row justify-content-center justify-content-lg-start">
+                <div class="col-12 col-lg-9 col-xxl-10 mb-5 mb-lg-0">
+                    <div class="cart--wrapper__table">
+                        <table class="cart-table table-lg table-borderless text-center">
+                            <thead>
+                            <tr>
+                                <th>محصول</th>
+                                <th>قیمت</th>
+                                <th>تعداد</th>
+                                <th>بارگذاری فایل سفارش</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <i class="icon icon-times"></i>
+                                    </a>
+                                    ترجمه زبان انگلیسی
+                                </td>
+                                <td>
+                                    <span class="bigger">۲۵۰/۰۰۰</span>
+                                    تومان
+                                </td>
+                                <td>
+                                    <input class="bigger" type="text" value="۲۵۰">
+                                    صفحه
+                                </td>
+                                <td>
+                                    <label for="file-1" class="custom-file-input">ارسال فایل</label>
+                                    <input type="file" id="file-1" class="d-none">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <i class="icon icon-times"></i>
+                                    </a>
+                                    ترجمه زبان انگلیسی
+                                </td>
+                                <td>
+                                    <span class="bigger">۲۵۰/۰۰۰</span>
+                                    تومان
+                                </td>
+                                <td>
+                                    <input class="bigger" type="text" value="۲۵۰">
+                                    صفحه
+                                </td>
+                                <td>
+                                    <label for="file-2" class="custom-file-input">ارسال فایل</label>
+                                    <input type="file" id="file-2" class="d-none">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <i class="icon icon-times"></i>
+                                    </a>
+                                    ترجمه زبان انگلیسی
+                                </td>
+                                <td>
+                                    <span class="bigger">۲۵۰/۰۰۰</span>
+                                    تومان
+                                </td>
+                                <td>
+                                    <input class="bigger" type="text" value="۲۵۰">
+                                    صفحه
+                                </td>
+                                <td>
+                                    <label for="file-3" class="custom-file-input">ارسال فایل</label>
+                                    <input type="file" id="file-3" class="d-none">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cart--wrapper__discount">
+                        <div class="input-group">
+                            <input type="text" class="form-control discount-input" placeholder="کد تخفیف..."
+                                   aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            <button class="btn btn-primary discount-button" type="button" id="button-addon1">اعمال
+                            </button>
+                        </div>
+                        <button class="btn btn-outline-primary refresh-button">اعمال بروز رسانی سبد خرید</button>
+                    </div>
+                </div>
+                <div class="col-11 col-lg-3 col-xxl-2 ps-lg-0">
+                    <div class="cart--wrapper__buy text-center">
+                        <div class="cart--wrapper__buy__container">
+                            <h5 class="panel-title panel-title--2">
+                                جمع کل سبد خرید
+                            </h5>
+                            <div class="cart--wrapper__buy__container__sum fw-bold">جمع کل</div>
+                            <div class="cart--wrapper__buy__container__price">
+                                <span>۲۵۰/۰۰۰</span>
+                                تومان
+                            </div>
+                            <a href="#" class="btn btn-primary buy-button">خرید نهایی و پرداخت</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
