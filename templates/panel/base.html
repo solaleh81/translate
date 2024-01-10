@@ -10,53 +10,7 @@
 
 <body>
     <div class="app panel">
-        <header class="panel-header">
-            <section class="sidebar-header">
-                <div class="sidebar-header--wrapper">
-                    <button class="navbar-toggler sidebar-toggler" type="button">
-                        <i class="icon icon-bars sidebar-toggle-bar d-none"></i>
-                        <svg class="icon sidebar-toggle-close d-inline" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16 2L9 9M9 9L2 16M9 9L16 16M9 9L2 2" stroke-width="2.88235" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </button>
-                    <a class="navbar-brand" href="#" title="ترنسلیت فارست">
-                        <img class="navbar-logo" src="../img/main-logo.png" alt="ترنسلیت فارست">
-                    </a>
-                    <button id="body-header-toggler" class="body-header-toggler btn d-md-none">
-                      <i class="icon icon-ellipsis-h-solid"></i>
-                    </button>
-                </div>
-            </section>
-            <section id="body-header" class="body-header">
-                <div class="d-flex align-items-center justify-content-between w-100">
-                    <div class="body-header--right">
-                        <div class="body-header--right__welcome">
-                            <h5>
-                                محمد امین رضوی عزیز خوش آمدی
-                            </h5>
-                            <p>
-                                ترنسلیت فارست روز خوشی را برای شما آرزو دارد
-                            </p>
-                        </div>
-                    </div>
-                    <div class="body-header--left">
-                        <div class="body-header--left__account">
-                            <div>
-                                0 تومان
-                                <i class="icon icon-solid-wallet me-2"></i>
-                            </div>
-                            <div class="me-3 me-sm-5">
-                                <i class="icon icon-solid-exit"></i>
-                            </div>
-                            <div class="me-3 me-sm-5">
-                                <i class="icon icon-solid-person"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </header>
-
+        {% include 'panel/header.html' %}
 
         <section class="panel-body">
             <aside id="panel-sidebar" class="panel-sidebar">
