@@ -11,25 +11,26 @@
 </head>
 
 <body>
-    <div class="app panel">
+<div class="app panel">
 
-        {% include 'panel/partials/header.html' %}
+    {% include 'panel/partials/header.html' %}
 
-        <section class="panel-body">
-            {% include 'panel/partials/sidebar.html' %}
+    <section class="panel-body">
+        {% include 'panel/partials/sidebar.html' %}
 
-            <div id="panel-main" class="panel-main">
-                <div class="dashboard">
-                    {% block content %}
+        <div id="panel-main" class="panel-main">
+            <div class="dashboard">
+                {% block content %}
 
-                    {% endblock %}
-                </div>
+                {% endblock %}
             </div>
-        </section>
-    </div>
-
+        </div>
+    </section>
+</div>
 
 
 </body>
 {% include 'panel/partials/main-js.html' %}
+{% block custom_js %}
+{% endblock %}
 </html>
