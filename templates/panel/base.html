@@ -17,21 +17,110 @@
     {% include 'panel/partials/header.html' %}
 
     <section class="panel-body">
-        {% include 'panel/partials/sidebar.html' %}
+        <aside id="panel-sidebar" class="panel-sidebar">
+            <div class="panel-sidebar--container">
 
-        <div id="panel-main" class="panel-main">
-            <div class="dashboard">
-                {% block content %}
+                {% include 'panel/partials/sidebar.html' %}
+                {% block custom_sidebar %}
 
                 {% endblock %}
             </div>
+        </aside>
+
+        <div id="panel-main" class="panel-main">
+            {% block content %}
+            <div class="orders-transactions">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="orders-transactions--table">
+                                <table class="order-table table-lg table-borderless striped-table text-center">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">عنوان</th>
+                                        <th scope="col">وضعیت پرداخت</th>
+                                        <th scope="col">وضعیت پروژه</th>
+                                        <th scope="col">تاریخ ثبت</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>ترجمه زبان انگلیسی</td>
+                                        <td>
+                                            <div class="status status-success">پرداخت شده</div>
+                                        </td>
+                                        <td>
+                                            <div class="status status-primary">درحال انجام</div>
+                                        </td>
+                                        <td class="table-reg-date">
+                                            ۱۴۰۰/۵/۴
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ترجمه زبان عربی</td>
+                                        <td>
+                                            <div class="status status-danger">عدم پرداخت</div>
+                                        </td>
+                                        <td>
+                                            _____
+                                        </td>
+                                        <td class="table-reg-date">
+                                            ۱۴۰۰/۵/۴
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>گویندگی</td>
+                                        <td>
+                                            <div class="status status-success">پرداخت شده</div>
+                                        </td>
+                                        <td>
+                                            <div class="status status-success">تحویل پروژه</div>
+                                        </td>
+                                        <td class="table-reg-date">
+                                            ۱۴۰۰/۵/۴
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ترجمه زبان عربی</td>
+                                        <td>
+                                            <div class="status status-success">پرداخت شده</div>
+                                        </td>
+                                        <td>
+                                            <div class="status status-primary">درحال انجام</div>
+                                        </td>
+                                        <td class="table-reg-date">
+                                            ۱۴۰۰/۵/۴
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ترجمه زبان انگلیسی</td>
+                                        <td>
+                                            <div class="status status-success">پرداخت شده</div>
+                                        </td>
+                                        <td>
+                                            <div class="status status-primary">درحال انجام</div>
+                                        </td>
+                                        <td class="table-reg-date">
+                                            ۱۴۰۰/۵/۴
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% endblock %}
         </div>
     </section>
 </div>
 
-
-</body>
 {% include 'panel/partials/main-js.html' %}
 {% block custom_js %}
+
 {% endblock %}
+</body>
+
 </html>
