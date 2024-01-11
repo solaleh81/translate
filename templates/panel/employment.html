@@ -1,7 +1,50 @@
 {% extends 'panel/base.html' %}
 {% load static %}
 {% block title%}
-<title>پنل - خرید و ثبت سفارش</title>
+<title>پنل - درخواست استخدام</title>
+{% endblock %}
+{% block custom_sidebar %}
+<div class="panel-sidebar--container__wrapper">
+    <ul>
+        <li>
+            <a href="dashboard.html">
+                <i class="icon icon-solid-home"></i> داشبورد
+            </a>
+        </li>
+        <li>
+            <a href="orders-transactions.html">
+                <i class="icon icon-dir-arrows"></i> سفارشات و تراکنش ها
+            </a>
+        </li>
+        <li>
+            <a href="cart.html">
+                <i class="icon icon-solid-cart"></i> خرید و ثبت سفارش
+            </a>
+        </li>
+        <li>
+            <a href="ticket.html">
+                <i class="icon icon-solid-plane"></i> ارسال تیکت
+            </a>
+        </li>
+        <li>
+            <a href="employment.html" class="active">
+                <i class="icon icon-solid-form"></i> درخواست استخدام
+            </a>
+        </li>
+        <li>
+            <a href="wallet.html">
+                <i class="icon icon-solid-wallet"></i> کیف پول
+            </a>
+        </li>
+    </ul>
+
+    <div class="invite-code">
+        <h6>کد دعوت شما</h6>
+        <div class="invite-code--box">
+            5563
+        </div>
+    </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -27,7 +70,8 @@
                             </div>
                             <div class="col-12 col-sm-6">
                                 <label for="birthDate" class="form-label">تاریخ تولد</label>
-                                <input type="text" class="form-control date1" id="birthDate">
+                                <input type="text" class="form-control date1 pwt-datepicker-input-element"
+                                       id="birthDate">
                             </div>
                             <div class="col-12 col-sm-6">
                                 <label for="expertise" class="form-label">تخصص / حرفه</label>
@@ -62,4 +106,18 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block custom_js %}
+<script src="{% static 'panel/node_modules/persian-date/dist/persian-date.min.js' %}"></script>
+<script src="{% static 'panel/node_modules/persian-datepicker/dist/js/persian-datepicker.min.js' %}"></script>
+<script>
+    $(document).ready(function () {
+        $(".date1").pDatepicker({
+            observer: true,
+            format: 'YYYY/MM/DD',
+            altField: '.observer-example-alt'
+        });
+    });
+</script>
 {% endblock %}
