@@ -11,3 +11,6 @@ def cart(request):
 
 def employment(request):
     return render(request, 'panel/employment.html')
+
+def orders_transactions(request):
+    return render(request, 'panel/orders-transactions.html')
