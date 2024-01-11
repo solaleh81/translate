@@ -8,3 +8,6 @@ def dashboard(request):
 
 def cart(request):
     return render(request, 'panel/cart.html')
+
+def employment(request):
+    return render(request, 'panel/employment.html')
