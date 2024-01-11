@@ -1,0 +1,133 @@
+{% extends 'panel/base.html' %}
+{% load static %}
+{% block title%}
+<title>پنل - سفارشات و تراکنش ها</title>
+{% endblock %}
+
+{% block custom_sidebar %}
+<div class="panel-sidebar--container__wrapper">
+    <ul>
+        <li>
+            <a href="dashboard.html">
+                <i class="icon icon-solid-home"></i> داشبورد
+            </a>
+        </li>
+        <li>
+            <a href="orders-transactions.html" class="active">
+                <i class="icon icon-dir-arrows"></i> سفارشات و تراکنش ها
+            </a>
+        </li>
+        <li>
+            <a href="cart.html">
+                <i class="icon icon-solid-cart"></i> خرید و ثبت سفارش
+            </a>
+        </li>
+        <li>
+            <a href="ticket.html">
+                <i class="icon icon-solid-plane"></i> ارسال تیکت
+            </a>
+        </li>
+        <li>
+            <a href="employment.html">
+                <i class="icon icon-solid-form"></i> درخواست استخدام
+            </a>
+        </li>
+        <li>
+            <a href="wallet.html">
+                <i class="icon icon-solid-wallet"></i> کیف پول
+            </a>
+        </li>
+    </ul>
+    <div class="invite-code">
+        <h6>کد دعوت شما</h6>
+        <div class="invite-code--box">
+            5563
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="orders-transactions">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="orders-transactions--table">
+                    <table class="order-table table-lg table-borderless striped-table text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">عنوان</th>
+                            <th scope="col">وضعیت پرداخت</th>
+                            <th scope="col">وضعیت پروژه</th>
+                            <th scope="col">تاریخ ثبت</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>ترجمه زبان انگلیسی</td>
+                            <td>
+                                <div class="status status-success">پرداخت شده</div>
+                            </td>
+                            <td>
+                                <div class="status status-primary">درحال انجام</div>
+                            </td>
+                            <td class="table-reg-date">
+                                ۱۴۰۰/۵/۴
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ترجمه زبان عربی</td>
+                            <td>
+                                <div class="status status-danger">عدم پرداخت</div>
+                            </td>
+                            <td>
+                                _____
+                            </td>
+                            <td class="table-reg-date">
+                                ۱۴۰۰/۵/۴
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>گویندگی</td>
+                            <td>
+                                <div class="status status-success">پرداخت شده</div>
+                            </td>
+                            <td>
+                                <div class="status status-success">تحویل پروژه</div>
+                            </td>
+                            <td class="table-reg-date">
+                                ۱۴۰۰/۵/۴
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ترجمه زبان عربی</td>
+                            <td>
+                                <div class="status status-success">پرداخت شده</div>
+                            </td>
+                            <td>
+                                <div class="status status-primary">درحال انجام</div>
+                            </td>
+                            <td class="table-reg-date">
+                                ۱۴۰۰/۵/۴
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ترجمه زبان انگلیسی</td>
+                            <td>
+                                <div class="status status-success">پرداخت شده</div>
+                            </td>
+                            <td>
+                                <div class="status status-primary">درحال انجام</div>
+                            </td>
+                            <td class="table-reg-date">
+                                ۱۴۰۰/۵/۴
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
