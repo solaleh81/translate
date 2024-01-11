@@ -6,205 +6,206 @@
 
 {% block content %}
 <div class="dashboard">
-                    <div class="container-fluid">
-                        <div class="rocw py-4">
-                            <div class="col-12 col-lg-7">
-                                <div class="dashboard--orders-transactions mb-4 mb-lg-0">
-                                    <h5 class="panel-title panel-title--1">سفارشات و تراکنش ها</h5>
-                                    <div class="dashboard--orders-transactions__table mb-2">
-                                        <table class="order-table table table-borderless striped-table text-center">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">عنوان</th>
-                                                    <th scope="col">وضعیت پرداخت</th>
-                                                    <th scope="col">وضعیت پروژه</th>
-                                                    <th scope="col">تاریخ ثبت</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>ترجمه زبان انگلیسی</td>
-                                                    <td>
-                                                        <div class="status status-success">پرداخت شده</div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="status status-primary">درحال انجام</div>
-                                                    </td>
-                                                    <td class="table-reg-date">
-                                                        ۱۴۰۰/۵/۴
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>ترجمه زبان عربی</td>
-                                                    <td>
-                                                        <div class="status status-danger">عدم پرداخت</div>
-                                                    </td>
-                                                    <td>
-                                                        _____
-                                                    </td>
-                                                    <td class="table-reg-date">
-                                                        ۱۴۰۰/۵/۴
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>گویندگی</td>
-                                                    <td>
-                                                        <div class="status status-success">پرداخت شده</div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="status status-success">تحویل پروژه</div>
-                                                    </td>
-                                                    <td class="table-reg-date">
-                                                        ۱۴۰۰/۵/۴
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>ترجمه زبان عربی</td>
-                                                    <td>
-                                                        <div class="status status-success">پرداخت شده</div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="status status-primary">درحال انجام</div>
-                                                    </td>
-                                                    <td class="table-reg-date">
-                                                        ۱۴۰۰/۵/۴
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>ترجمه زبان انگلیسی</td>
-                                                    <td>
-                                                        <div class="status status-success">پرداخت شده</div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="status status-primary">درحال انجام</div>
-                                                    </td>
-                                                    <td class="table-reg-date">
-                                                        ۱۴۰۰/۵/۴
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-5">
-                                <div class="row flex-column justify-content-between h-100">
-                                    <div class="col-12 mb-4">
-                                        <div class="dashboard--last-tickets mb-4 mb-lg-0">
-                                            <h5 class="panel-title panel-title--1">آخرین تیکت ها</h5>
-                                            <div class="dashboard--last-tickets__table last-ticket-table">
-                                                <table class="ticket-table table table-borderless text-center">
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>درخواست استخدام</th>
-                                                            <td>
-                                                                <div class="status status-success">پاسخ داده شده</div>
-                                                            </td>
-                                                            <td class="table-reg-date">
-                                                                یک هفته پیش
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>ترجمه زبان عربی</th>
-                                                            <td>
-                                                                <div class="status status-primary">درحال بررسی</div>
-                                                            </td>
-                                                            <td class="table-reg-date">
-                                                                یک هفته پیش
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 ps-lg-5">
-                                        <a class="dashboard--register-banner container-fluid" href="#">
-                                            <div class="row justify-content-center align-items-center">
-                                                <div class="col-6 text-center p-0">
-                                                    <div class="dashboard--register-banner__content">
-                                                        <h4>
-                                                            مکث نکن
-                                                            <br>
-                                                            ثبت نام کن!
-                                                        </h4>
-                                                        <p>
-                                                            برای استخدام در  گروه ما
-                                                            <br>
-                                                            فقط با یک کلیک فاصله داری
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="dashboard--register-banner__img py-2">
-                                                        <img alt="" class="img-fluid" src="{% static 'img/dashboard-1.png' %}">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row py-4 gx-5 align-items-stretch">
-                            <div class="col-12 col-lg-5 mb-5 mb-lg-0">
-                                <a class="dashboard--ticket-banner container-fluid text-white" href="#">
-                                    <div class="row h-100 justify-content-center align-items-center">
-                                        <div class="col-6">
-                                            <div class="dashboard--ticket-banner__content">
-                                                <h4>
-                                                    هر گونه سوالی داشتید
-                                                    <br>
-                                                    از طریق تیکت
-                                                    <br>
-                                                    در میان بگذارید
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="dashboard--ticket-banner__img">
-                                                <img class="img-fluid" src="{% static 'img/dashboard-2.png' %}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-lg-7">
-                                <a class="dashboard--invite-banner container-fluid" href="#">
-                                    <div class="row justify-content-center align-items-center">
-                                        <div class="col-12 col-sm-4">
-                                            <div class="dashboard--invite-banner__right">
-                                                <h6>
-                                                    دوستات رو
-                                                </h6>
-                                                <h4>
-                                                   دعوت کن!!
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-5 col-sm-4">
-                                            <div class="dashboard--invite-banner__img">
-                                                <img alt="" class="img-fluid" src="{% static 'img/dashboard-3.png' %}">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="dashboard--invite-banner__left">
-                                                <p>
-                                                    هر نفری که با کد شما
-                                                    خرید بکند 10 هزار تومان
-                                                    پاداش بگیرید
-                                                </p>
-                                                <div class="text-start">
-                                                    <div class="dashboard--invite-banner__left__emoji">
-                                                        &#128525;
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+    <div class="container-fluid">
+        <div class="row py-4">
+            <div class="col-12 col-lg-7">
+                <div class="dashboard--orders-transactions mb-4 mb-lg-0">
+                    <h5 class="panel-title panel-title--1">سفارشات و تراکنش ها</h5>
+                    <div class="dashboard--orders-transactions__table mb-2">
+                        <table class="order-table table table-borderless striped-table text-center">
+                            <thead>
+                            <tr>
+                                <th scope="col">عنوان</th>
+                                <th scope="col">وضعیت پرداخت</th>
+                                <th scope="col">وضعیت پروژه</th>
+                                <th scope="col">تاریخ ثبت</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>ترجمه زبان انگلیسی</td>
+                                <td>
+                                    <div class="status status-success">پرداخت شده</div>
+                                </td>
+                                <td>
+                                    <div class="status status-primary">درحال انجام</div>
+                                </td>
+                                <td class="table-reg-date">
+                                    ۱۴۰۰/۵/۴
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ترجمه زبان عربی</td>
+                                <td>
+                                    <div class="status status-danger">عدم پرداخت</div>
+                                </td>
+                                <td>
+                                    _____
+                                </td>
+                                <td class="table-reg-date">
+                                    ۱۴۰۰/۵/۴
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>گویندگی</td>
+                                <td>
+                                    <div class="status status-success">پرداخت شده</div>
+                                </td>
+                                <td>
+                                    <div class="status status-success">تحویل پروژه</div>
+                                </td>
+                                <td class="table-reg-date">
+                                    ۱۴۰۰/۵/۴
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ترجمه زبان عربی</td>
+                                <td>
+                                    <div class="status status-success">پرداخت شده</div>
+                                </td>
+                                <td>
+                                    <div class="status status-primary">درحال انجام</div>
+                                </td>
+                                <td class="table-reg-date">
+                                    ۱۴۰۰/۵/۴
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ترجمه زبان انگلیسی</td>
+                                <td>
+                                    <div class="status status-success">پرداخت شده</div>
+                                </td>
+                                <td>
+                                    <div class="status status-primary">درحال انجام</div>
+                                </td>
+                                <td class="table-reg-date">
+                                    ۱۴۰۰/۵/۴
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="row flex-column justify-content-between h-100">
+                    <div class="col-12 mb-4">
+                        <div class="dashboard--last-tickets mb-4 mb-lg-0">
+                            <h5 class="panel-title panel-title--1">آخرین تیکت ها</h5>
+                            <div class="dashboard--last-tickets__table last-ticket-table">
+                                <table class="ticket-table table table-borderless text-center">
+                                    <tbody>
+                                    <tr>
+                                        <th>درخواست استخدام</th>
+                                        <td>
+                                            <div class="status status-success">پاسخ داده شده</div>
+                                        </td>
+                                        <td class="table-reg-date">
+                                            یک هفته پیش
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>ترجمه زبان عربی</th>
+                                        <td>
+                                            <div class="status status-primary">درحال بررسی</div>
+                                        </td>
+                                        <td class="table-reg-date">
+                                            یک هفته پیش
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 ps-lg-5">
+                        <a class="dashboard--register-banner container-fluid" href="#">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-6 text-center p-0">
+                                    <div class="dashboard--register-banner__content">
+                                        <h4>
+                                            مکث نکن
+                                            <br>
+                                            ثبت نام کن!
+                                        </h4>
+                                        <p>
+                                            برای استخدام در گروه ما
+                                            <br>
+                                            فقط با یک کلیک فاصله داری
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="dashboard--register-banner__img py-2">
+                                        <img alt="" class="img-fluid" src="{% static 'img/dashboard-1.png' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="row py-4 gx-5 align-items-stretch">
+            <div class="col-12 col-lg-5 mb-5 mb-lg-0">
+                <a class="dashboard--ticket-banner container-fluid text-white" href="#">
+                    <div class="row h-100 justify-content-center align-items-center">
+                        <div class="col-6">
+                            <div class="dashboard--ticket-banner__content">
+                                <h4>
+                                    هر گونه سوالی داشتید
+                                    <br>
+                                    از طریق تیکت
+                                    <br>
+                                    در میان بگذارید
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="dashboard--ticket-banner__img">
+                                <img class="img-fluid" src="{% static 'img/dashboard-2.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-lg-7">
+                <a class="dashboard--invite-banner container-fluid" href="#">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12 col-sm-4">
+                            <div class="dashboard--invite-banner__right">
+                                <h6>
+                                    دوستات رو
+                                </h6>
+                                <h4>
+                                    دعوت کن!!
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-5 col-sm-4">
+                            <div class="dashboard--invite-banner__img">
+                                <img alt="" class="img-fluid" src="{% static 'img/dashboard-3.png' %}">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="dashboard--invite-banner__left">
+                                <p>
+                                    هر نفری که با کد شما
+                                    خرید بکند 10 هزار تومان
+                                    پاداش بگیرید
+                                </p>
+                                <div class="text-start">
+                                    <div class="dashboard--invite-banner__left__emoji">
+                                        &#128525;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
