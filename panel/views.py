@@ -14,3 +14,6 @@ def employment(request):
 
 def orders_transactions(request):
     return render(request, 'panel/orders-transactions.html')
+
+def ticket(request):
+    return render(request, 'panel/ticket.html')
