@@ -1,0 +1,88 @@
+{% extends 'panel/base.html' %}
+{% load static %}
+{% block title%}
+<title>پنل - درخواست استخدام</title>
+{% endblock %}
+{% block custom_sidebar %}
+<div class="panel-sidebar--container__wrapper">
+    <ul>
+        <li>
+            <a href="dashboard.html">
+                <i class="icon icon-solid-home"></i> داشبورد
+            </a>
+        </li>
+        <li>
+            <a href="orders-transactions.html">
+                <i class="icon icon-dir-arrows"></i> سفارشات و تراکنش ها
+            </a>
+        </li>
+        <li>
+            <a href="cart.html">
+                <i class="icon icon-solid-cart"></i> خرید و ثبت سفارش
+            </a>
+        </li>
+        <li>
+            <a href="ticket.html" class="active">
+                <i class="icon icon-solid-plane"></i> ارسال تیکت
+            </a>
+        </li>
+        <li>
+            <a href="employment.html">
+                <i class="icon icon-solid-form"></i> درخواست استخدام
+            </a>
+        </li>
+        <li>
+            <a href="wallet.html">
+                <i class="icon icon-solid-wallet"></i> کیف پول
+            </a>
+        </li>
+    </ul>
+
+    <div class="invite-code">
+        <h6>کد دعوت شما</h6>
+        <div class="invite-code--box">
+            5563
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="ticket">
+    <div class="ticket--wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <h5 class="panel-title panel-title--2 mb-4">
+                    اضافه کردن تیکت
+                </h5>
+            </div>
+            <form class="row justify-content-center justify-content-lg-start">
+                <div class="col-12 col-lg-9 col-xxl-10 mb-5 mb-lg-0">
+                    <div class="ticket--wrapper__form">
+                        <div class="input-group ticket--wrapper__form__subject mb-3">
+                            <div class="input-group-text ticket-subject">موضوع تیکت</div>
+                            <input type="text" class="form-control ticket-input"
+                                   placeholder="موضوع خود را وارد کنید ...">
+                        </div>
+                        <textarea class="ticket--wrapper__form__explain mb-3"
+                                  placeholder="متن خود را وارد کنید ..."></textarea>
+                        <input class="btn btn-primary ticket-button d-block me-auto" type="submit" value="ارسال تیکت">
+                    </div>
+                </div>
+                <div class="col-11 col-lg-3 col-xxl-2">
+                    <div class="ticket--wrapper__file text-center">
+                        <h6>بارگذاری فایل</h6>
+                        <p>
+                            شما میتوانید در این قسمت
+                            عکس و فایل خود را تا
+                            اپلود کنید
+                        </p>
+                        <label for="file-1" class="btn btn-primary upload-button">آپلود فایل</label>
+                        <input type="file" id="file-1" class="d-none">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
