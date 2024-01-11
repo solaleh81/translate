@@ -17,3 +17,6 @@ def orders_transactions(request):
 
 def ticket(request):
     return render(request, 'panel/ticket.html')
+
+def wallet(request):
+    return render(request, 'panel/wallet.html')
