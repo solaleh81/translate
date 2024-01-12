@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="{% static 'panel/css/icons/style.css' %}">
+    <!-- WEB FONTS -->
+    <link rel="stylesheet" href="{% static 'panel/webfonts/Kalameh/Kalameh.css' %}">
+    <link rel="stylesheet" href="{% static 'panel/webfonts/YekanBakh/YekanBakh.css' %}">
+    <link rel="stylesheet" href="{% static 'panel/webfonts/SegoeUI/SegoeUI.css' %}">
+    <link rel="stylesheet" href="{% static 'panel/webfonts/SegoePrint/SegoePrint.css' %}">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'panel/css/main.css' %}">
+    <title>عضویت ترنسلیت فارست</title>
+</head>
+
+<body>
+<div class="app signup">
+    <div class="signup--wrapper">
+        <!-- BG Blur -->
+        <div class="bg-blur"></div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="signup--wrapper__logo">
+                    <a href="../vendor/index.html">
+                        <img src="{% static 'img/sub-logo.png' %}" title="ترنسلیت فارست" class="img-fluid" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row text-center mt-5">
+                <h2 class="title title--2">
+                    به عضویت در سیستم ما خوش آمدید
+                </h2>
+                <h5 class="untitle untitle--2">
+                    فقط 5 ثانیه با ثبت نام در سایت فاصله دارید!!
+                </h5>
+            </div>
+            <div class="row mt-4">
+                <div class="form__container">
+                    <div class="form__container__top">
+
+                        <form class="signup--wrapper__form mb-4" method="POST" action="{% url 'signup' %}">
+                            {% csrf_token %}
+
+                            {% if messages %}
+                                <ul class="messages">
+                                    {% for message in messages %}
+                                        <li{% if message.tags %}
+                                            class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                            {% if form.errors %}
+
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        {% for field, errors in form.errors.items %}
+                                            {% if forloop.first %}
+                                                {% for error in errors %}
+                                                    <li>{{ error }}</li>
+                                                {% endfor %}
+                                            {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endif %}
+                            <div class="signup--wrapper__form__input-group mb-4">
+                                <label for="uName">شماره موبایل یا ایمیل</label>
+                                <div class="input-group signup--wrapper__form__input-group__all">
+                                    <div class="signup--wrapper__form__input-group__all__icon-right">
+                                        <i class="icon icon-solid-person"></i>
+                                    </div>
+                                    <input type="text"
+                                           class="form-control signup--wrapper__form__input-group__all__input"
+                                           placeholder="ostad@gmail.com" id="uName" name="username">
+                                </div>
+                            </div>
+                            <div class="signup--wrapper__form__input-group mb-4">
+                                <label for="pass">رمز عبور</label>
+                                <div class="input-group signup--wrapper__form__input-group__all">
+                                    <div class="signup--wrapper__form__input-group__all__icon-right">
+                                        <i class="icon icon-solid-key"></i>
+                                    </div>
+                                    <input type="password"
+                                           class="form-control signup--wrapper__form__input-group__all__input"
+                                           placeholder="1234" id="pass" name="password1">
+                                    <div class="signup--wrapper__form__input-group__all__icon-left">
+                                        <button type="button" class="show-hide icon icon-eye-slash-solid"
+                                                id="showHide1">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="signup--wrapper__form__input-group mb-4">
+                                <label for="conPass">تکرار رمز عبور</label>
+                                <div class="input-group signup--wrapper__form__input-group__all">
+                                    <div class="signup--wrapper__form__input-group__all__icon-right">
+                                        <i class="icon icon-solid-key"></i>
+                                    </div>
+                                    <input type="password"
+                                           class="form-control signup--wrapper__form__input-group__all__input"
+                                           placeholder="1234" id="conPass" name="password2">
+                                    <div class="signup--wrapper__form__input-group__all__icon-left">
+                                        <button type="button" class="show-hide icon icon-eye-slash-solid"
+                                                id="showHide2">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <input class="btn btn-primary form-control signup--wrapper__form__input-group__all__submit"
+                                   type="submit" value="ثبت عضویت">
+                        </form>
+
+
+                    </div>
+                    <div class="form__container__bottom text-center">
+                        <div class="login">
+                            قبلا ثبت نام کردی؟! <a href="#" class="text-primary">ورود به سایت</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- BOOTSTRAP BUNDLE.js' %} -->
+<script src="{% static 'panel/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'panel/node_modules/jquery/dist/jquery.min.js' %}"></script>
+
+<script>
+    $(".show-hide").on('click', function () {
+        $(this).toggleClass("icon-eye-slash-solid icon-eye-solid");
+        var input = $(this).parent().parent().children("input");
+        if (input.attr("type") === "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+</script>
+</body>
+
+</html>

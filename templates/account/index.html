@@ -1,0 +1,956 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="{% static 'panel/css/icons/style.css' %}">
+    <!-- WEB FONTS -->
+    <link rel="stylesheet" href="{% static 'panel/webfonts/Kalameh/Kalameh.css' %}">
+    <link rel="stylesheet" href="{% static 'panel/webfonts/YekanBakh/YekanBakh.css' %}">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'panel/css/main.css' %}">
+    <title>صفحۀ اصلی</title>
+</head>
+
+<body>
+    <div class="app index">
+        <!-- START THE HEADER SECTION -->
+        <header class="main-header">
+            <!-- START THE CONTACT NAV SECTION -->
+            <section id="contact-nav" class="contact-nav bg-primary text-white">
+                <div class="container">
+                    <div class="contact-nav__left">
+                        <div class="contact-nav__left__landline">
+                            <a href="tel:021545454545">
+                                <i class="icon icon-landline"></i>
+                                <span>021545454545</span>
+                            </a>
+                        </div>
+                        <div class="contact-nav__left__phone">
+                            <a href="tel:0939554545">
+                                <i class="icon icon-phone"></i>
+                                <span>0939554545</span>
+                            </a>
+                            <span>-</span>
+                            <a href="tel:0939554545">
+                                <span>0939554545</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-nav__right">
+                        <div class="contact-nav__right__email">
+                            <a href="mailto:aref.safaei@gmail.com">
+                                <i class="icon icon-email"></i>
+                                <span>aref.safaei@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END THE CONTACT NAV SECTION -->
+
+            <!-- START THE NAVBAR SECTION -->
+            <nav class="main-nav navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#" title="ترنسلیت فارست">
+                        <img src="{% static 'img/main-logo.png' %}" alt="ترنسلیت فارست">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <button class="navbar-toggler mb-1 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 2L9 9M9 9L2 16M9 9L16 16M9 9L2 2" stroke-width="2.88235" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                        <a class="navbar-brand d-lg-none" href="#" title="ترنسلیت فارست">
+                            <img src="{% static 'img/main-logo.png' %}" alt="ترنسلیت فارست">
+                        </a>
+                        <ul class="navbar-right navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">صفحه اصلی</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    خدمات
+                                    <i class="icon icon-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="services-1.html">یک</a></li>
+                                    <li><a class="dropdown-item" href="services-2.html">دو</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cooperation.html">دعوت همکاری</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="weblog-1.html">وبلاگ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">درباره ما</a>
+                            </li>
+                        </ul>
+                        <div class="navbar-left d-flex">
+                            <ul class="navbar-nav ms-auto mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">ورود</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-primary rounded-pill nav-link" aria-current="page" href="signup.html">عضویت</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- END THE NAVBAR SECTION -->
+        </header>
+        <!-- END THE HEADER SECTION -->
+
+        <!-- START INTRO SECTION -->
+        <section id="home" class="intro-section py-5">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <!-- START THE CONTENT FOR THE VECTOR -->
+                    <div class="col-lg-4 col-md-3 col-sm-2 intros text-center align-self-start">
+                        <div class="intro-section__vec-r">
+                            <img src="{% static 'img/translate-1.png' %}" class="img-fluid" alt="ترنسلیت فارست">
+                        </div>
+                    </div>
+                    <!-- START THE CONTENT FOR THE CONTENT -->
+                    <div class="col-lg-4 col-md-6 col-sm-8 intros text-center mb-5 mb-sm-0">
+                        <div class="intro__content">
+                            <h1 class="display-5">
+                                <span class="display-5--intro">
+                                ترجمه حرفه ای و <span class="text-primary">تخصصی</span>
+                                </span>
+                                <span class="display-5--sub">
+                                میتوانید با خیال راحت به ما بسپارید!!!
+                            </span>
+                                <span class="display-5--description lh-base">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                            </span>
+                            </h1>
+                            <button type="button" class="btn btn-primary btn-rounded">
+                            سفارش کار
+                        </button>
+                        </div>
+                    </div>
+                    <!-- START THE CONTENT FOR THE VECTOR -->
+                    <div class="col-lg-4 col-md-3 col-sm-2 intros align-self-start">
+                        <div class="intro-section__vec-l text-center">
+                            <img src="{% static 'img/translate-2.png' %}" class="img-fluid" alt="ترنسلیت فارست">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END INTRO SECTION -->
+
+        <!-- START SERVICES SECTION -->
+        <section id="services" class="services-section py-4">
+            <div class="container">
+                <!-- START SECTION TITLE -->
+                <div class="row text-center">
+                    <h1 class="display-7 text-primary fw-bold">
+                        <span class="display-7--intro">
+                        خدمات ما
+                    </span>
+                        <span class="display-7--sub px-2">
+                        امکانات و ویژگی های بی نظیر
+                    </span>
+                        <span class="display-7--description">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای
+                    </span>
+                    </h1>
+                </div>
+                <!-- START BENEFITS NAV -->
+                <nav class="benefits row text-center">
+                    <div class="benefit col-sm-6 col-lg-3">
+                        <i class="icon icon-check"></i>
+                        <span>
+                            خدمات سریع و مطمئن
+                    </span>
+                    </div>
+                    <div class="benefit col-sm-6 col-lg-4">
+                        <i class="icon icon-check"></i>
+                        <span>
+                        بالاترین استاندارد های خدمات
+                    </span>
+                    </div>
+                    <div class="benefit col-sm-12 col-lg-5">
+                        <i class="icon icon-check"></i>
+                        <span>
+                        ترجمه های دقیق و کامل مناسب با قواعد فارسی
+                    </span>
+                    </div>
+                </nav>
+
+                <!-- START THE SERVICES ITEMS -->
+                <div class="services-items row gy-5 gx-lg-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box text-center">
+                            <div class="icon icon-write d-inline-block"></div>
+                            <div class="service-info">
+                                <div class="caption">
+                                    <h4>نویسندگی</h4>
+                                    <p>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                        کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+                                    </p>
+                                    <a href="#">اطلاعات بیشتر</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box text-center">
+                            <div class="icon icon-edit d-inline-block"></div>
+                            <div class="service-info">
+                                <div class="caption">
+                                    <h4>ویرایش</h4>
+                                    <p>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                        کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+                                    </p>
+                                    <a href="#">اطلاعات بیشتر</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box text-center">
+                            <div class="icon icon-translate d-inline-block"></div>
+                            <div class="service-info">
+                                <div class="caption">
+                                    <h4>ترجمه</h4>
+                                    <p>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                        کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+                                    </p>
+                                    <a href="#">اطلاعات بیشتر</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box text-center">
+                            <div class="icon icon-translate d-inline-block"></div>
+                            <div class="service-info">
+                                <div class="caption">
+                                    <h4>ترجمه</h4>
+                                    <p>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                        کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+                                    </p>
+                                    <a href="#">اطلاعات بیشتر</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box text-center">
+                            <div class="icon icon-microphone d-inline-block"></div>
+                            <div class="service-info">
+                                <div class="caption">
+                                    <h4>گویندگی و روخوانی</h4>
+                                    <p>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                        کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+                                    </p>
+                                    <a href="#">اطلاعات بیشتر</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box text-center">
+                            <div class="icon icon-clipboard d-inline-block"></div>
+                            <div class="service-info">
+                                <div class="caption">
+                                    <h4>تولید محتوا</h4>
+                                    <p>
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                        کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+                                    </p>
+                                    <a href="#">اطلاعات بیشتر</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SERVICES SECTION -->
+
+        <!-- START WHY SECTION -->
+        <section id="why" class="why py-5">
+            <!-- SOLID CIRCLES -->
+            <div class="solid-circle solid-1"></div>
+            <div class="solid-circle solid-2"></div>
+
+            <div class="container-fluid">
+                <div class="row text-white align-items-center">
+                    <div class="col-10 col-sm-6 col-md-5 p-3 text-center align-self-center mx-auto">
+                        <div class="why__vec">
+                            <img src="{% static 'img/translate-3.png' %}" class="img-fluid" alt="ترنسلیت فارست">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 p-5 pb-0">
+                        <div class="why__content text-right">
+                            <h1 class="display-6 text-white fw-bold text-right">
+                                <span class="display-6--intro">
+                                چرا ترنسلیت فارست؟؟
+                            </span>
+                                <span class="display-6--sub">
+                                چه ویژگی هایی ترجمه تخصصی بلوبری را متمایز می سازد؟
+                            </span>
+                                <span class="display-6--description lh-lg">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                            </span>
+                            </h1>
+                            <div class="why__content__list">
+                                <ul class="benefits-list list-unstyled ms-sm-5">
+                                    <li>ارتباط مستقیم با مترجم</li>
+                                    <li>تحویل سریع در زمان مشخص شده</li>
+                                    <li>پشتیبانی ۲۴ ساعته</li>
+                                </ul>
+                                <ul class="benefits-list list-unstyled">
+                                    <li>تحویل تدریجی</li>
+                                    <li>ضمانت کیفی ترجمه</li>
+                                    <li>پرداخت اقساطی هزینه ترجمه</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END WHY SECTION -->
+
+        <!-- START WORK PROCESS SECTION -->
+        <section id="work-process" class="work-process process-section pb-5">
+            <!-- Bg 1 -->
+            <div class="process-section__bg1"></div>
+            <!-- Bg 2 -->
+            <div class="process-section__bg2"></div>
+
+            <div class="container-fluid">
+                <!-- START SECTION TITLE -->
+                <div class="process-section--title row text-center">
+                    <h1 class="display-7 text-primary fw-bold">
+                        <span class="display-7--intro">
+                        سفارش
+                    </span>
+                        <span class="display-7--sub px-2">
+                        فرایند کار با بلوبری
+                    </span>
+                    </h1>
+                </div>
+
+                <!-- START PROCESS SECTION -->
+                <div class="process row position-relative">
+                    <div class="process-wrapper col-12 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column process--box process--box--blue rounded">
+                            <div class="process--box--img">
+                                <img src="{% static 'img/contract.png' %}" class="img-fluid" alt="">
+                            </div>
+                            <div class="process--box--caption">
+                                <h4>
+                                    عقد قرارداد
+                                </h4>
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-wrapper col-12 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column process--box process--box--orange rounded">
+                            <div class="process--box--img order-lg-1">
+                                <img src="{% static 'img/translator.png' %}" class="img-fluid" alt="">
+                            </div>
+                            <div class="process--box--caption order-lg-0">
+                                <h4>
+                                    مترجم
+                                </h4>
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-wrapper col-12 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column process--box process--box--purple rounded">
+                            <div class="process--box--img">
+                                <img src="{% static 'img/delivery.png' %}" class="img-fluid" alt="">
+                            </div>
+                            <div class="process--box--caption">
+                                <h4>
+                                    تحویل محصول
+                                </h4>
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-wrapper col-12 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column process--box process--box--pink rounded">
+                            <div class="process--box--img order-lg-1">
+                                <img src="{% static 'img/payment.png' %}" class="img-fluid" alt="">
+                            </div>
+                            <div class="process--box--caption order-lg-0">
+                                <h4>
+                                    پرداخت
+                                </h4>
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- PROCESS BG -->
+                    <div class="process__bg position-absolute d-none d-lg-block">
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1141 214.44"><defs><style>.cls-1{fill:#7257ff;}.cls-2{fill:#ffa26d;}</style></defs><path class="cls-1" d="M-215.13,470.73v-1c2.33,0,4.68-.12,7-.27l.07,1C-210.42,470.61-212.78,470.7-215.13,470.73Zm-7-.09c-2.33-.1-4.69-.25-7-.47l.1-1c2.29.21,4.62.37,6.94.46Zm21-.84-.12-1c2.29-.28,4.61-.63,6.88-1l.18,1C-196.48,469.17-198.81,469.52-201.12,469.8Zm-35-.48c-2.32-.34-4.64-.76-6.91-1.24l.2-1c2.26.48,4.56.89,6.86,1.24Zm48.79-2-.23-1c2.26-.54,4.52-1.16,6.72-1.82l.29,1C-182.76,466.17-185,466.78-187.32,467.33Zm-62.53-.89c-2.25-.62-4.51-1.3-6.71-2.05l.32-.94c2.18.73,4.42,1.42,6.66,2Zm76-3.17-.34-.94c2.16-.79,4.33-1.66,6.46-2.58l.4.92C-169.51,461.6-171.7,462.47-173.88,463.27ZM-263.15,462c-2.16-.87-4.32-1.82-6.43-2.82l.43-.91c2.09,1,4.24,1.94,6.38,2.81Zm618.28-3.21v-1c2.33,0,4.68-.05,7-.15l0,1C359.84,458.69,357.48,458.74,355.13,458.74Zm-7-.15c-2.33-.1-4.69-.25-7-.45l.08-1c2.3.2,4.64.35,7,.45Zm21-.46-.09-1c2.32-.2,4.65-.46,6.93-.77l.13,1C373.83,457.66,371.49,457.92,369.15,458.13ZM-161,457.69l-.45-.9c2-1,4.11-2.15,6.13-3.31l.49.87C-156.85,455.52-158.93,456.64-161,457.69Zm495.14-.32c-2.3-.3-4.63-.66-6.93-1.07l.18-1c2.28.41,4.6.77,6.88,1.07Zm48.91-1.13-.18-1c2.28-.43,4.57-.91,6.81-1.44l.23,1C387.66,455.33,385.35,455.81,383.05,456.24Zm-658.88-.31c-2-1.11-4.06-2.3-6.06-3.55l.53-.85c2,1.24,4,2.42,6,3.52Zm596.16-1c-2.28-.51-4.57-1.09-6.8-1.71l.26-1c2.22.61,4.5,1.18,6.76,1.7ZM396.7,453l-.28-1c2.23-.65,4.46-1.36,6.64-2.12l.33.95C401.19,451.64,398.94,452.36,396.7,453Zm-89.89-1.84c-2.22-.72-4.44-1.5-6.63-2.32l.36-.94c2.17.82,4.38,1.6,6.57,2.31Zm-455.65-.49-.55-.84c1.93-1.26,3.86-2.59,5.74-4l.59.81C-144.95,448.07-146.9,449.41-148.84,450.68Zm-138.9-2.18c-1.9-1.34-3.8-2.75-5.64-4.19l.62-.79c1.82,1.44,3.71,2.83,5.59,4.16Zm697.7-.09-.38-.93c2.15-.87,4.29-1.81,6.39-2.79l.42.91C414.28,446.59,412.12,447.53,410,448.41Zm-116.29-2.19c-2.14-.92-4.29-1.91-6.38-2.92l.43-.9c2.09,1,4.22,2,6.35,2.9Zm129-3.75-.46-.89c2-1.08,4.08-2.23,6.07-3.42l.51.86C426.79,440.21,424.73,441.37,422.67,442.47Zm-560.16-.06-.63-.78c1.79-1.44,3.58-3,5.32-4.52l.66.75C-133.89,439.42-135.69,441-137.49,442.41ZM281,440.1c-2-1.1-4.09-2.26-6.11-3.46l.51-.86c2,1.19,4.05,2.35,6.07,3.44Zm-579.84-.27c-1.75-1.53-3.49-3.12-5.18-4.74l.69-.72c1.68,1.61,3.41,3.19,5.15,4.71Zm733.52-4.57-.55-.83c1.92-1.28,3.83-2.63,5.7-4l.59.81C438.59,432.61,436.66,434,434.72,435.26ZM-127,433.06l-.7-.71c1.64-1.61,3.28-3.29,4.88-5l.73.69C-123.71,429.76-125.36,431.45-127,433.06Zm396-.14c-1.93-1.26-3.88-2.6-5.8-4l.58-.81c1.91,1.36,3.85,2.69,5.77,3.94Zm-577.92-2.81c-1.59-1.67-3.18-3.42-4.73-5.2l.75-.65c1.54,1.76,3.12,3.5,4.71,5.16ZM446,426.9l-.63-.77c1.79-1.47,3.57-3,5.3-4.55l.66.75C449.6,423.89,447.8,425.43,446,426.9Zm-188.45-2.14c-1.84-1.42-3.68-2.91-5.47-4.41l.64-.76c1.78,1.49,3.61,3,5.44,4.38Zm-375-1.95-.75-.65c1.5-1.75,3-3.56,4.45-5.39l.78.62C-114.39,419.23-115.9,421.05-117.41,422.81Zm-200.76-3.29c-1.44-1.8-2.88-3.67-4.28-5.57l.8-.59c1.4,1.89,2.83,3.75,4.26,5.54Zm774.62-2-.7-.71c1.64-1.62,3.28-3.3,4.87-5l.73.69C459.75,414.19,458.11,415.88,456.45,417.51Zm-209.67-1.77c-1.72-1.55-3.44-3.17-5.12-4.8l.69-.71c1.68,1.62,3.39,3.23,5.1,4.77Zm-355.45-3.94-.81-.59c1.36-1.84,2.71-3.77,4-5.71l.83.56C-105.94,408-107.31,410-108.67,411.8Zm-217.85-3.59c-1.3-1.91-2.59-3.89-3.84-5.88l.85-.53c1.24,2,2.53,3.95,3.82,5.85Zm792.55-1-.76-.65c1.5-1.76,3-3.58,4.43-5.41l.78.62C469,403.64,467.54,405.47,466,407.24ZM236.71,406c-1.61-1.67-3.22-3.41-4.78-5.15l.74-.67c1.56,1.74,3.16,3.46,4.76,5.13Zm-337.48-5.78-.85-.53c1.23-2,2.45-4,3.62-6l.86.5C-98.31,396.19-99.54,398.21-100.77,400.18ZM-334,396.32c-1.16-2-2.31-4.08-3.42-6.14l.88-.48c1.1,2.06,2.25,4.12,3.41,6.11Zm808.71-.13-.81-.59c1.36-1.88,2.7-3.81,4-5.74l.83.55C477.43,392.35,476.08,394.29,474.71,396.19Zm-247.38-.69c-1.5-1.79-3-3.62-4.43-5.46l.79-.61c1.43,1.82,2.91,3.65,4.4,5.43ZM-93.7,388l-.88-.48c1.11-2.05,2.19-4.14,3.22-6.21l.89.44C-91.5,383.87-92.59,386-93.7,388Zm576.2-3.56-.86-.52c1.21-2,2.4-4,3.53-6l.87.48C484.9,380.44,483.71,382.49,482.5,384.48Zm-263.84,0c-1.38-1.89-2.74-3.82-4-5.75l.82-.56c1.31,1.91,2.66,3.84,4,5.72Zm-559.29-.52c-1-2.1-2.05-4.24-3-6.36l.91-.41c1,2.11,2,4.24,3,6.33Zm253.19-8.48-.91-.42c1-2.15,1.92-4.31,2.79-6.42l.92.38C-85.51,371.1-86.46,373.27-87.44,375.44Zm298.19-2.63c-1.29-2-2.51-4.06-3.64-6l.86-.5c1.13,1.95,2.35,4,3.62,6Zm278.58-.62-.89-.45c1.08-2.14,2.09-4.27,3-6.32l.91.4C491.43,367.89,490.42,370,489.33,372.19Zm-835.75-1.1c-.92-2.26-1.77-4.48-2.53-6.58l.94-.33c.75,2.08,1.6,4.28,2.52,6.53Zm264.33-8.69-1-.34c.46-1.28.69-2,.69-2s.86-1.69,2.47-4.41l.86.51c-1.54,2.61-2.35,4.17-2.41,4.27S-81.65,361.16-82.09,362.4Zm286.22-1.68h-.3l-.08-.15h0l-.05-.1h0s-1.22-2.23-3.54-5.89L201,354c1.89,3,3,5,3.43,5.69h0l.2.41-.51.25Zm578.52-.34s-.85-2.46-2.63-6.49l.92-.41c1.8,4.08,2.65,6.55,2.66,6.58ZM495.1,359.33l-.91-.43c.63-1.3,1.69-3.44,3.25-6.28l.88.49C496.77,355.93,495.71,358.05,495.1,359.33Zm-570.41-9.09-.84-.55c1.26-1.92,2.59-3.87,4-5.81l.82.58C-72.74,346.38-74.06,348.33-75.31,350.24Zm271.59-1.5c-1.31-1.9-2.68-3.81-4.07-5.7l.8-.59c1.4,1.89,2.78,3.81,4.09,5.72ZM777,347.56c-1-2.06-2.11-4.15-3.24-6.2l.87-.48c1.14,2.06,2.24,4.16,3.27,6.23ZM501.81,347l-.86-.52c1.18-2,2.44-4,3.73-6l.84.54C504.23,343.08,503,345.08,501.81,347Zm-569-8.22-.79-.61c1.41-1.84,2.87-3.7,4.36-5.51l.77.63C-64.37,335.14-65.83,337-67.23,338.82ZM188,337.48c-1.43-1.81-2.92-3.64-4.42-5.42l.76-.64c1.51,1.79,3,3.62,4.45,5.44Zm321.48-2.18-.82-.57c1.33-1.9,2.72-3.82,4.13-5.69l.8.6C512.13,331.5,510.75,333.41,509.43,335.3Zm260.88,0c-1.2-2-2.45-4-3.73-5.92l.84-.55c1.28,1.95,2.54,4,3.75,5.95ZM-58.37,328l-.75-.66c1.54-1.76,3.13-3.51,4.72-5.2l.73.68C-55.25,324.51-56.83,326.25-58.37,328Zm237.31-1.21c-1.56-1.73-3.16-3.46-4.76-5.13l.72-.69c1.61,1.68,3.22,3.41,4.78,5.15Zm338.89-2.67-.78-.63c1.46-1.82,3-3.64,4.49-5.4l.76.65C520.79,320.49,519.28,322.3,517.83,324.12Zm244.8-.5c-1.35-1.89-2.75-3.77-4.18-5.6l.79-.62c1.43,1.85,2.85,3.74,4.2,5.64Zm-811.42-5.8-.7-.71c1.67-1.65,3.37-3.29,5.08-4.86l.67.74C-45.43,314.55-47.13,316.17-48.79,317.82Zm218.05-1.12c-1.67-1.63-3.38-3.24-5.09-4.8l.68-.74c1.71,1.57,3.43,3.19,5.11,4.82ZM527,313.53l-.74-.68c1.59-1.71,3.23-3.42,4.87-5.07l.71.71C530.16,310.13,528.53,311.83,527,313.53Zm227.09-.94c-1.5-1.76-3-3.53-4.62-5.23l.73-.68c1.58,1.72,3.15,3.49,4.65,5.27Zm-792.56-4.24-.65-.76c1.79-1.52,3.61-3,5.43-4.46l.62.79C-34.92,305.34-36.73,306.84-38.51,308.35Zm197.44-1.06c-1.78-1.51-3.61-3-5.42-4.42l.62-.79c1.82,1.43,3.65,2.93,5.44,4.45Zm377.88-3.66-.68-.73c1.71-1.6,3.47-3.18,5.23-4.7l.65.76C540.26,300.47,538.51,302,536.81,303.63Zm207.77-1.3c-1.64-1.63-3.35-3.25-5.06-4.8l.67-.74c1.73,1.56,3.44,3.19,5.1,4.83ZM-27.55,299.7l-.59-.81c1.89-1.38,3.83-2.73,5.76-4l.55.83C-23.74,297-25.67,298.33-27.55,299.7Zm175.49-1c-1.89-1.38-3.82-2.72-5.73-4l.55-.83c1.92,1.28,3.86,2.63,5.77,4Zm399.45-4.16-.63-.78c1.84-1.46,3.71-2.9,5.58-4.26l.59.8C551.08,291.62,549.21,293.05,547.39,294.5ZM734.25,293c-1.79-1.48-3.64-2.93-5.48-4.31l.6-.81c1.85,1.4,3.71,2.86,5.51,4.35Zm-750.19-1-.52-.85c2-1.22,4-2.4,6.08-3.52l.48.87C-11.93,289.57-14,290.75-15.94,292Zm152.26-1c-2-1.21-4-2.38-6-3.49l.48-.87c2,1.11,4.08,2.29,6.08,3.51Zm422.33-4.66-.55-.83c1.95-1.3,3.94-2.57,5.92-3.78l.52.86C562.57,283.71,560.59,285,558.65,286.26Zm-562.37-1-.44-.89c2.1-1,4.24-2,6.36-3l.41.91C.49,283.2-1.63,284.19-3.72,285.22Zm726.8-.62c-1.92-1.3-3.9-2.56-5.87-3.75l.52-.86c2,1.2,4,2.48,5.91,3.78Zm-599-.39c-2.09-1-4.22-2-6.33-2.93l.4-.92c2.12.92,4.26,1.91,6.37,2.95Zm-115-4.59-.36-.94c2.17-.83,4.39-1.63,6.6-2.37l.32.95C13.42,278,11.22,278.79,9.06,279.62Zm561.52-.6-.48-.88c2-1.12,4.15-2.21,6.23-3.23l.44.9C574.7,276.83,572.62,277.91,570.58,279Zm-459.27-.37c-2.17-.83-4.39-1.6-6.58-2.32l.31-.95c2.21.72,4.44,1.5,6.62,2.33Zm599.85-1.26c-2-1.1-4.13-2.15-6.22-3.15l.43-.9c2.1,1,4.21,2.07,6.26,3.17ZM22.29,275.22l-.28-1c2.25-.64,4.54-1.22,6.8-1.74l.23,1C26.79,274,24.52,274.59,22.29,275.22Zm75.76-.87c-2.24-.6-4.52-1.15-6.78-1.64l.21-1c2.28.49,4.57,1,6.83,1.66Zm485.05-1.46-.39-.92c2.14-.93,4.33-1.82,6.5-2.64l.36.94C587.41,271.08,585.23,272,583.1,272.89Zm-547.23-.8-.18-1c2.29-.41,4.62-.78,6.93-1.09l.13,1C40.46,271.31,38.14,271.67,35.87,272.09Zm662.7-.67c-2.14-.88-4.33-1.72-6.51-2.49l.33-.94c2.2.78,4.4,1.62,6.56,2.51Zm-614.14,0c-2.28-.37-4.61-.69-6.91-.94l.11-1c2.32.25,4.66.57,7,.94Zm-34.75-1.18-.08-1c2.3-.2,4.66-.35,7-.45l0,1C54.31,269.89,52,270,49.68,270.24Zm20.9-.34c-2.3-.13-4.64-.21-7-.23v-1c2.34,0,4.7.1,7,.23ZM596.14,268l-.31-.95c2.21-.72,4.48-1.4,6.73-2l.26,1C600.58,266.57,598.34,267.24,596.14,268Zm89.29-1.19c-2.21-.65-4.47-1.27-6.72-1.82l.24-1c2.26.56,4.54,1.17,6.77,1.84Zm-75.84-2.48-.22-1c2.27-.5,4.59-1,6.89-1.35l.17,1C614.14,263.34,611.84,263.79,609.59,264.29Zm62.31-.82c-2.25-.44-4.57-.83-6.87-1.16l.14-1c2.32.34,4.65.73,6.92,1.17Zm-48.58-1.55-.12-1c2.3-.28,4.65-.52,7-.71l.07,1C627.94,261.39,625.61,261.63,623.32,261.92Zm34.79-.44c-2.28-.23-4.62-.4-7-.52l.05-1c2.34.12,4.7.3,7,.52Zm-20.9-.66,0-1c2.29-.07,4.62-.1,7-.08l.06,1h-.08C641.86,260.72,639.49,260.75,637.21,260.82Z" transform="translate(353.87 -259.73)"/><circle id="Ellipse_26" data-name="Ellipse 26" class="cls-2" cx="1137" cy="101.51" r="4"/><circle id="Ellipse_27" data-name="Ellipse 27" class="cls-2" cx="4" cy="105.51" r="4"/><path id="Polygon_2" data-name="Polygon 2" class="cls-2" d="M559.77,279.7a1,1,0,0,1,1.36-.36,1,1,0,0,1,.36.36l4.75,8a1,1,0,0,1-.87,1.51h-9.5a1,1,0,0,1-.85-1.51Z" transform="translate(353.87 -259.73)"/><path id="Polygon_3" data-name="Polygon 3" class="cls-2" d="M287.41,441.08a1,1,0,0,1,.7-1.23,1.06,1.06,0,0,1,.56,0l8.61,2.69a1,1,0,0,1,.65,1.26,1,1,0,0,1-.26.42l-6.2,6a1,1,0,0,1-1.42,0,1,1,0,0,1-.24-.43Z" transform="translate(353.87 -259.73)"/><path id="Polygon_4" data-name="Polygon 4" class="cls-2" d="M-6.84,285.43a1,1,0,0,1-.82-1.15,1.07,1.07,0,0,1,.25-.51l6.08-6.66a1,1,0,0,1,1.41-.06,1,1,0,0,1,.27.41l2.81,8.16a1,1,0,0,1-.62,1.27.91.91,0,0,1-.49,0Z" transform="translate(353.87 -259.73)"/><path id="Polygon_5" data-name="Polygon 5" class="cls-2" d="M-240.68,468.54a1,1,0,0,1,0-1.42.92.92,0,0,1,.47-.28l7.65-2a1,1,0,0,1,1.22.71,1,1,0,0,1,0,.49l-1.84,7.4a1,1,0,0,1-1.21.72,1,1,0,0,1-.44-.23Z" transform="translate(353.87 -259.73)"/></svg>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- END PROCESS SECTION -->
+
+        <!-- START SUPPORT SECTION -->
+        <section id="support" class="support py-5">
+            <!-- Bg -->
+            <div class="support__bg"></div>
+
+            <div class="container-fluid">
+                <!-- START SECTION TITLE -->
+                <div class="support-section--title row text-center">
+                    <h1 class="display-7 text-primary fw-bold">
+                        <span class="display-7--intro">
+                        پشتیبانی
+                    </span>
+                        <span class="display-7--sub px-2">
+                        در سختی ها پشتیبان شما هستیم
+                    </span>
+                    </h1>
+                </div>
+
+                <!-- START SUPPORT CONTENT -->
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-6 p-5">
+                        <div class="support__content mx-auto">
+                            <h3 class="heading-4">
+                                پشتیبانی حرفه ای و مطمئن
+                            </h3>
+                            <p class="lh-lg">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                            </p>
+                            <div class="text-center text-sm-start ms-sm-5">
+                                <a href="" class="btn btn-outline-primary rounded-0 mt-4">توضیحات بیشتر</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 p-5">
+                        <div class="support__vector mx-auto">
+                            <img src="{% static 'img/translate-4.png' %}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SUPPORT SECTION -->
+
+        <!-- START CUSTOMERS SECTION -->
+        <section id="customers" class="customers">
+            <div class="container-fluid">
+                <!-- START SECTION TITLE -->
+                <div class="row text-center py-5">
+                    <h1 class="display-7 text-primary fw-bold">
+                        <span class="display-7--sub px-2">
+                        برخی از مشتریان ما
+                    </span>
+                        <span class="display-7--description">
+                        قدر دان انتخاب شما  هستیم و منسجم تر به کارمان ادامه میدهیم
+                    </span>
+                    </h1>
+                </div>
+                <!-- START PEOPLE CONTENT -->
+                <div class="people row align-items-center pt-4 pb-5">
+                    <div class="col-12 col-xl-5">
+                        <div class="people--vector text-center mb-5 mb-xl-0 text-xl-start">
+                            <img src="{% static 'img/translate-6.png' %}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 ps-lg-5">
+                        <div id="carouselExampleCaptions" class="people--carousel carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-control-next">
+                                <button class="btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="people__card">
+                                        <div class="people__card__header">
+                                            <div class="person--pic">
+                                                <img src="{% static 'img/user-1.png' %}" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="person--info">
+                                                <h5>
+                                                    حمیدرضا سعادتی
+                                                </h5>
+                                                <span>
+                                                مشتری بلوبری
+                                            </span>
+                                            </div>
+                                        </div>
+                                        <div class="people__card__body">
+                                            <p class="lh-lg text-secondary">
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                                            </p>
+                                        </div>
+                                        <div class="people__card__footer">
+                                            <img src="{% static 'img/main-logo.png' %}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="people__card">
+                                        <div class="people__card__header">
+                                            <div class="person--pic">
+                                                <img src="{% static 'img/user-1.png' %}" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="person--info">
+                                                <h5>
+                                                    حمیدرضا سعادتی
+                                                </h5>
+                                                <span>
+                                                مشتری بلوبری
+                                            </span>
+                                            </div>
+                                        </div>
+                                        <div class="people__card__body">
+                                            <p class="lh-lg text-secondary">
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                                            </p>
+                                        </div>
+                                        <div class="people__card__footer">
+                                            <img src="{% static 'img/main-logo.png' %}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="people__card">
+                                        <div class="people__card__header">
+                                            <div class="person--pic">
+                                                <img src="{% static 'img/user-1.png' %}" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="person--info">
+                                                <h5>
+                                                    حمیدرضا سعادتی
+                                                </h5>
+                                                <span>
+                                                مشتری بلوبری
+                                            </span>
+                                            </div>
+                                        </div>
+                                        <div class="people__card__body">
+                                            <p class="lh-lg text-secondary">
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                                            </p>
+                                        </div>
+                                        <div class="people__card__footer">
+                                            <img src="{% static 'img/main-logo.png' %}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-control-prev">
+                                <button class="btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END CUSTOMERS SECTION -->
+
+        <!-- START TEAM SECTION -->
+        <section id="team" class="team">
+            <div class="container-fluid">
+                <div class="blue-layer"></div>
+            </div>
+        </section>
+        <!-- END TEAM SECTION -->
+
+        <!-- START WEBLOG SECTION -->
+        <section id="weblog" class="weblog py-5">
+            <div class="container">
+                <!-- START SECTION TITLE -->
+                <div class="row text-center py-5">
+                    <h1 class="display-7 text-primary fw-bold">
+                        <span class="display-7--sub px-2">
+                       وبلاگ و اخبارها
+                    </span>
+                    </h1>
+                </div>
+                <!-- START WEBLOG CONTENT -->
+                <div class="weblog--navs">
+                    <div class="weblog--navs--nav row">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-weblog-tab" data-bs-toggle="pill" data-bs-target="#pills-weblog" type="button" role="tab" aria-controls="pills-weblog" aria-selected="true">وبلاگ</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-news-tab" data-bs-toggle="pill" data-bs-target="#pills-news" type="button" role="tab" aria-controls="pills-news" aria-selected="false">اخبار</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-articles-tab" data-bs-toggle="pill" data-bs-target="#pills-articles" type="button" role="tab" aria-controls="pills-articles" aria-selected="false">مقالات</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-questions-tab" data-bs-toggle="pill" data-bs-target="#pills-questions" type="button" role="tab" aria-controls="pills-questions" aria-selected="false">پرسش ها</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="weblog--navs--content">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="weblog-pane tab-pane fade show active" id="pills-weblog" role="tabpanel" aria-labelledby="pills-weblog-tab">
+                                <div class="row gy-5 gx-sm-5">
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="weblog-pane__card">
+                                            <div class="weblog-pane__card__img">
+                                                <img src="{% static 'img/web-1.png' %}" class="img-fluid card-img" alt="">
+                                            </div>
+                                            <div class="weblog-pane__card__body">
+                                                <h5 class="text-primary">
+                                                    مترجمی چیست؟
+                                                </h5>
+                                                <p class="text-secondary lh-lg">
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                                    کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+                                                    ایجاد کرد، در این صورت می توان امید داشت
+                                                </p>
+                                            </div>
+                                            <div class="weblog-pane__card__footer">
+                                                <span class="weblog-pane__card__footer__date">
+                                                مهر ۹۸
+                                            </span>
+                                                <span class="weblog-pane__card__footer__continue">
+                                                <a href="#">
+                                                    ادامه مطلب &gt;
+                                                </a>
+                                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="weblog-pane__card">
+                                            <div class="weblog-pane__card__img">
+                                                <img src="{% static 'img/web-2.png' %}" class="img-fluid card-img" alt="">
+                                            </div>
+                                            <div class="weblog-pane__card__body">
+                                                <h5 class="text-primary">
+                                                    مقالات موجود در مترجمی
+                                                </h5>
+                                                <p class="text-secondary lh-lg">
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                                    کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+                                                    ایجاد کرد، در این صورت می توان امید داشت
+                                                </p>
+                                            </div>
+                                            <div class="weblog-pane__card__footer">
+                                                <span class="weblog-pane__card__footer__date">
+                                                مهر ۹۸
+                                            </span>
+                                                <span class="weblog-pane__card__footer__continue">
+                                                <a href="#">
+                                                    ادامه مطلب &gt;
+                                                </a>
+                                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="weblog-pane__card">
+                                            <div class="weblog-pane__card__img">
+                                                <img src="{% static 'img/web-3.png' %}" class="img-fluid card-img" alt="">
+                                            </div>
+                                            <div class="weblog-pane__card__body">
+                                                <h5 class="text-primary">
+                                                    روش یادگیری زبان
+                                                </h5>
+                                                <p class="text-secondary lh-lg">
+                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                                    کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+                                                    ایجاد کرد، در این صورت می توان امید داشت
+                                                </p>
+                                            </div>
+                                            <div class="weblog-pane__card__footer">
+                                                <span class="weblog-pane__card__footer__date">
+                                                مهر ۹۸
+                                            </span>
+                                                <span class="weblog-pane__card__footer__continue">
+                                                <a href="#">
+                                                    ادامه مطلب &gt;
+                                                </a>
+                                            </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-news" role="tabpanel" aria-labelledby="pills-news-tab">...</div>
+                            <div class="tab-pane fade" id="pills-articles" role="tabpanel" aria-labelledby="pills-articles-tab">...</div>
+                            <div class="tab-pane fade" id="pills-questions" role="tabpanel" aria-labelledby="pills-questions-tab">...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END WEBLOG SECTION -->
+
+        <!-- START DISCOUNT SECTION-->
+        <section id="discount" class="discount my-5 py-3">
+            <div class="container py-4 border-bottom">
+                <div class="row justify-content-center justify-content-sm-between align-items-center">
+                    <div class="col-8 col-sm-4 col-md-4 col-lg-2 mx-auto mx-sm-0 mb-5 mb-sm-0">
+                        <div class="discount--logo mx-auto mx-sm-0">
+                            <img src="{% static 'img/sub-logo.png' %}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-10 col-sm-7 col-md-6 col-lg-4">
+                        <div class="discount--form">
+                            <form action="">
+                                <div class="d-flex flex-column">
+                                    <h5 class="text-secondary mb-3">
+                                        از تخفیف های مناسبی باخبر شوید
+                                    </h5>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="ایمیل خود را وارد کنید..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                        <button class="btn btn-primary" type="button" id="button-addon1">فرستادن</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END DISCOUNT SECTION-->
+
+        <!-- START FOOTER SECTION -->
+        <footer class="main-footer text-secondary py-3">
+            <div class="container">
+                <!-- Company Info -->
+                <div class="footer-ci row gx-sm-5">
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <div class="footer-ci__box">
+                            <h5>
+                                خدمات
+                            </h5>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                  نویسندگی   
+                              </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                  گویندگی
+                              </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                  ویرایش 
+                              </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                  تولید محتوا
+                              </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                  روخوانی
+                              </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <div class="footer-ci__box">
+                            <h5>
+                                وبلاگ
+                            </h5>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                  چگونه زبان بیاموزیم
+                              </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                  سفر در خارج
+                              </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                  آموزش زبان 
+                              </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                  تولید محتوا در سایت
+                              </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                  دیگر   
+                              </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <div class="footer-ci__box">
+                            <h5>
+                                فروشگاه
+                            </h5>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                  کتاب دانستنی ها
+                              </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                  رمان ترجمه شده
+                              </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                  آهنگ خارجی 
+                              </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                  رمان های خارجی
+                              </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                  دیگر   
+                              </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <div class="footer-ci__box">
+                            <h5>
+                                درباره ترنسلیت فارست
+                            </h5>
+                            <p class="lh-lg">
+                                شرکت صدگان سامانه هوشمند یک شرکت سهامی خاص است که در اردیبهشت ۱۳۹۴ به ثبت رسیده است. این شرکت به صورت تخصصی در زمینه ی تولید و عرضه ی نرم افزارهای یکپارچه مالی و
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 text-center text-md-end">
+                        <div class="footer-ci__box text-end">
+                            <h5>
+                                راه های ارتباطی
+                            </h5>
+                            <div class="footer-sm mx-auto mx-md-0">
+                                <a href="#" title="تلگرام">
+                                    <i class="icon icon-telegram"></i>
+                                </a>
+                                <a href="#" title="فیسبوک">
+                                    <i class="icon icon-facebook-f"></i>
+                                </a>
+                                <a href="#" title="اینستاگرام">
+                                    <i class="icon icon-instagram"></i>
+                                </a>
+                                <a href="#" title="لینکدین">
+                                    <i class="icon icon-linkedin-in"></i>
+                                </a>
+                            </div>
+                            <div class="footer-enamad text-center text-md-end me-md-4">
+                                <a href="#">
+                                    <img src="{% static 'img/enamad-one-star.png' %}" title="نماد الکترونیکی" alt="نماد الکترونیکی یک ستاره" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Contact Info -->
+            <div class="footer-contact">
+                <div class="container-fluid">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="footer-contact__phone">
+                                <i class="icon icon-phone"></i>
+                                <span>02188067197</span> -
+                                <span>09210951011</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <div class="footer-contact__address">
+                                <i class="icon icon-location-plus"></i>
+                                <span>
+                              تهران، نبش یوسف آباد پنجاه و دوم، پلاک 404، طبقه سوم، واحد 10
+                          </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="footer-contact__email">
+                                <i class="icon icon-email"></i>
+                                <span>aref.safaei@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <div class="footer-bottom__copyright">
+                                تمامی حقوق مادی و معنوی این سایت متعلق به سایت
+                                <a href="">ترنسلیت فارست</a> میباشد
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER SECTION -->
+    </div>
+
+
+    <!-- BOOTSTRAP BUNDLE.js' %} -->
+    <script src="{% static 'panel/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>
