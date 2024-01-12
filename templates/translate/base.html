@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    {% include 'translate/partials/head.html' %}
+    {% block custom_css %}
+
+    {% endblock %}
+    {% block title %}
+        <title> </title>
+    {% endblock %}
+
+</head>
+
+<body>
+<div class="app index">
+    {% include 'translate/partials/header.html' %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    {% include 'translate/partials/footer.html' %}
+</div>
+
+
+{% include 'translate/partials/main-js.html' %}
+{% block custom_js %}
+
+{% endblock %}
+</body>
+
+</html>
