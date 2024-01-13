@@ -4,7 +4,7 @@ from django.db import models
 
 
 class User(AbstractBaseUser):
-    profile = models.URLField(null=True, blank=True)
+    profile = models.ImageField(upload_to="profile/%Y/%m/", null=True, blank=True)
     username = models.CharField(max_length=150, unique=True)
     first_name = models.CharField(max_length=150, blank=True)
     last_name = models.CharField(max_length=150, blank=True)
