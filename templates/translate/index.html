@@ -86,16 +86,16 @@
 
             <!-- START THE SERVICES ITEMS -->
             <div class="services-items row gy-5 gx-lg-5">
-                {% for category in categories %}
+                {% for product in products %}
                     <div class="col-lg-4 col-md-6">
                         <div class="service-box text-center">
                             <div class="icon icon-write d-inline-block"></div>
                             <div class="service-info">
 
                                 <div class="caption">
-                                    <h4>{{ category.title }}</h4>
+                                    <h4>{{ product.title }}</h4>
                                     <p>
-                                        {{ category.caption|linebreaksbr|truncatewords:2 }}
+                                        {{ product.caption|linebreaksbr|truncatewords:10 }}
 
                                     </p>
                                     <a href="">اطلاعات بیشتر</a>
@@ -502,122 +502,62 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="weblog--navs--content">
                     <div class="tab-content" id="pills-tabContent">
                         <div class="weblog-pane tab-pane fade show active" id="pills-weblog" role="tabpanel"
                              aria-labelledby="pills-weblog-tab">
                             <div class="row gy-5 gx-sm-5">
-                                <div class="col-sm-6 col-lg-4">
-                                    <div class="weblog-pane__card">
-                                        <div class="weblog-pane__card__img">
-                                            <img src="{% static 'img/web-1.png' %}" class="img-fluid card-img" alt="">
-                                        </div>
-                                        <div class="weblog-pane__card__body">
-                                            <h5 class="text-primary">
-                                                مترجمی چیست؟
-                                            </h5>
-                                            <p class="text-secondary lh-lg">
-                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
-                                                از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
-                                                متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-                                                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
-                                                متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
-                                                ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
-                                                ایجاد کرد، در این صورت می توان امید داشت
-                                            </p>
-                                        </div>
-                                        <div class="weblog-pane__card__footer">
-                                                <span class="weblog-pane__card__footer__date">
-                                                مهر ۹۸
-                                            </span>
-                                            <span class="weblog-pane__card__footer__continue">
-                                                <a href="#">
-                                                    ادامه مطلب &gt;
-                                                </a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4">
-                                    <div class="weblog-pane__card">
-                                        <div class="weblog-pane__card__img">
-                                            <img src="{% static 'img/web-2.png' %}" class="img-fluid card-img" alt="">
-                                        </div>
-                                        <div class="weblog-pane__card__body">
-                                            <h5 class="text-primary">
-                                                مقالات موجود در مترجمی
-                                            </h5>
-                                            <p class="text-secondary lh-lg">
-                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
-                                                از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
-                                                متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-                                                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
-                                                متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
-                                                ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
-                                                ایجاد کرد، در این صورت می توان امید داشت
-                                            </p>
-                                        </div>
-                                        <div class="weblog-pane__card__footer">
-                                                <span class="weblog-pane__card__footer__date">
-                                                مهر ۹۸
-                                            </span>
-                                            <span class="weblog-pane__card__footer__continue">
-                                                <a href="#">
-                                                    ادامه مطلب &gt;
-                                                </a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4">
-                                    <div class="weblog-pane__card">
-                                        <div class="weblog-pane__card__img">
-                                            <img src="{% static 'img/web-3.png' %}" class="img-fluid card-img" alt="">
-                                        </div>
-                                        <div class="weblog-pane__card__body">
-                                            <h5 class="text-primary">
-                                                روش یادگیری زبان
-                                            </h5>
-                                            <p class="text-secondary lh-lg">
-                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
-                                                از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
-                                                متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-                                                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
-                                                متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
-                                                ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
-                                                ایجاد کرد، در این صورت می توان امید داشت
-                                            </p>
-                                        </div>
-                                        <div class="weblog-pane__card__footer">
-                                                <span class="weblog-pane__card__footer__date">
-                                                مهر ۹۸
-                                            </span>
-                                            <span class="weblog-pane__card__footer__continue">
-                                                <a href="#">
-                                                    ادامه مطلب &gt;
-                                                </a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                {% for weblog in weblogs %}
+                                    <div class="col-sm-6 col-lg-4">
 
-                        <div class="tab-pane fade" id="pills-news" role="tabpanel" aria-labelledby="pills-news-tab">
-                            ...
-                        </div>
-                        <div class="tab-pane fade" id="pills-articles" role="tabpanel"
-                             aria-labelledby="pills-articles-tab">...
-                        </div>
-                        <div class="tab-pane fade" id="pills-questions" role="tabpanel"
-                             aria-labelledby="pills-questions-tab">...
+
+                                        <div class="weblog-pane__card">
+
+                                            <div class="weblog-pane__card__img">
+                                                <img src="{{ weblog.image.url }}" class="img-fluid card-img" alt="">
+                                            </div>
+                                            <div class="weblog-pane__card__body">
+                                                <h5 class="text-primary">
+                                                    {{ weblog.title }}
+                                                </h5>
+                                                <p class="text-secondary lh-lg">
+                                                    {{ weblog.caption|linebreaksbr|truncatewords:10 }}
+                                                </p>
+                                            </div>
+                                            <div class="weblog-pane__card__footer">
+                                        <span class="weblog-pane__card__footer__date">
+                                                مهر ۹۸
+                                            </span>
+                                                <span class="weblog-pane__card__footer__continue">
+                                                <a href="#">
+                                                    ادامه مطلب &gt;
+                                                </a>
+                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                {% endfor %}
+
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="tab-pane fade" id="pills-news" role="tabpanel" aria-labelledby="pills-news-tab">
+                    ...
+                </div>
+                <div class="tab-pane fade" id="pills-articles" role="tabpanel"
+                     aria-labelledby="pills-articles-tab">...
+                </div>
+                <div class="tab-pane fade" id="pills-questions" role="tabpanel"
+                     aria-labelledby="pills-questions-tab">...
+                </div>
             </div>
+        </div>
+        </div>
         </div>
     </section>
     <!-- END WEBLOG SECTION -->
