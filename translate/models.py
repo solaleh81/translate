@@ -1,5 +1,9 @@
 from django.db import models
 from account.models import User
+from persiantools import jdatetime
+from datetime import datetime  # Import the datetime module
+
+
 
 
 class Product(models.Model):
@@ -62,6 +66,33 @@ class Weblog(models.Model):
     image = models.ImageField(upload_to="weblog/%Y/%m/", null=True, blank=True)
     title = models.CharField(max_length=100)
     caption = models.TextField()
+    created_date = models.DateTimeField(auto_now_add=True)
+
+    @property
+    def jalali_created_date(self):
+        # Convert created_date to a standard Python datetime object
+        standard_datetime = datetime.combine(self.created_date.date(), self.created_date.time())
+
+        # Convert the standard datetime object to JalaliDateTime
+        jalali_datetime = jdatetime.JalaliDateTime.to_jalali(standard_datetime)
+        mapping = {
+            1: "فروردین",
+            2: "اردیبهشت",
+            3: "خرداد",
+            4: "تیر",
+            5: "مرداد",
+            6: "شهریور",
+            7: "مهر",
+            8: "آبان",
+            9: "آذر",
+            10: "دی",
+            11: "بهمن",
+            12: "اسفند",
+        }
+        persian_month_name = mapping[jalali_datetime.month]
+        persian_year = jalali_datetime.strftime("%Y")
+
+        return f"{persian_month_name} {persian_year}"
 
     def __str__(self):
         return self.title
