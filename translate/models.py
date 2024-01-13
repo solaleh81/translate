@@ -18,6 +18,7 @@ class Product(models.Model):
 
 class Choice(models.Model):
     name = models.CharField(max_length=100)
+    image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -63,7 +64,7 @@ class Order(models.Model):
         return price
 
 class Weblog(models.Model):
-    image = models.ImageField(upload_to="weblog/%Y/%m/", null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
     title = models.CharField(max_length=100)
     caption = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
