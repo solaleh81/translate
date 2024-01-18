@@ -1,0 +1,1283 @@
+{% extends 'translate/base.html' %}
+{% load static %}
+
+{% block custom_css %}
+    <!-- SLICK CAROUSEL -->
+    <link rel="stylesheet" href="{% static 'panel/node_modules/slick-carousel/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'panel/node_modules/slick-carousel/slick/slick-theme.css' %}">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="{% static 'panel/css/icons/style.css' %}">
+    <!-- WEB FONTS -->
+    <link rel="stylesheet" href="{% static 'panel/webfonts/Kalameh/Kalameh.css' %}">
+    <link rel="stylesheet" href="{% static 'panel/webfonts/YekanBakh/YekanBakh.css' %}">
+    <link rel="stylesheet" href="{% static 'panel/webfonts/SegoeUI/SegoeUI.css' %}">
+    <link rel="stylesheet" href="{% static 'panel/webfonts/SegoePrint/SegoePrint.css' %}">
+{% endblock %}
+
+{% block title %}
+    <title>خدمات - ۱</title>
+{% endblock %}
+
+{% block content %}
+    <!-- START INTRO SECTION -->
+    <section class="services-1--intro py-5">
+        <div class="container">
+            <div class="row justify-content-center py-5 mb-3">
+                <!-- START THE CONTENT FOR THE VECTOR -->
+                <div class="col-10 col-md-6 col-lg-4 intros text-center">
+                    <div class="services--intro__vec">
+                        <img src="{% static 'img/remote-work.png' %}" class="img-fluid" alt="ترنسلیت فارست">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-4">
+                <!-- START THE CONTENT FOR THE CONTENT -->
+                <div class="col-12 col-md-8 col-lg-6 intros text-center mb-5 mb-sm-0">
+                    <div class="services--intro__content">
+                        <h1 class="display-5 lh-lg text-center">
+                                <span class="display-5--sub text-center">
+                            تیم <span class="text-primary">ترنسلیت فارست</span> آماده بهترین خدمات تخصصی مترجمی در ایران
+                                </span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END INTRO SECTION -->
+
+    <!-- START ORDER SECTION -->
+    <section class="order">
+        <div class="container">
+            <div class="order--container container-fluid overflow-hidden">
+                <!-- START SECTION TITLE -->
+                <div class="row text-center">
+                    <h1 class="display-7 text-primary fw-bold">
+                            <span class="display-7--intro text-warning">
+                                سفارش
+                            </span>
+                        <span class="display-7--sub px-2">
+                                بهترین خدمات مترجمی با تنوع بسیار
+                            </span>
+                        <span class="display-7--description w-lg-50">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای
+                            </span>
+                    </h1>
+                </div>
+
+                <div class="container-fluid">
+                    <!-- START NAVS & TABS -->
+                    <div class="order--content order-nav row">
+                        <div class="col-1 col-sm-2 col-md-2 main-nav-col">
+                            <div class="order--content__nav vertical-nav">
+                                <div class="d-flex align-items-start">
+                                    <div class="d-flex align-items-start">
+
+                                        <div class="nav flex-column nav-pills px-md-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <button class="nav-link active" id="v-pills-translate1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-translate1" type="button" role="tab" aria-controls="v-pills-translate1" aria-selected="true">
+                                        <i class="icon icon-translate"></i>
+                                                {{ products.0.title }}
+                                      </button>
+                                            <button class="nav-link" id="v-pills-read-tab" data-bs-toggle="pill" data-bs-target="#v-pills-read" type="button" role="tab" aria-controls="v-pills-read" aria-selected="false">
+                                        <i class="icon icon-microphone"></i>
+                                        {{ products.1.title }}
+                                      </button>
+                                            <button class="nav-link" id="v-pills-produce-tab" data-bs-toggle="pill" data-bs-target="#v-pills-produce" type="button" role="tab" aria-controls="v-pills-produce" aria-selected="false">
+                                        <i class="icon icon-clipboard"></i>
+                                        {{ products.2.title }}
+                                      </button>
+                                            <button class="nav-link" id="v-pills-write-tab" data-bs-toggle="pill" data-bs-target="#v-pills-write" type="button" role="tab" aria-controls="v-pills-write" aria-selected="false">
+                                        <i class="icon icon-write"></i>
+                                        {{ products.3.title }}
+                                      </button>
+                                            <button class="nav-link" id="v-pills-edit-tab" data-bs-toggle="pill" data-bs-target="#v-pills-edit" type="button" role="tab" aria-controls="v-pills-edit" aria-selected="false">
+                                        <i class="icon icon-edit"></i>
+                                        {{ products.4.title }}
+                                      </button>
+                                            <button class="nav-link" id="v-pills-translate2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-translate2" type="button" role="tab" aria-controls="v-pills-translate2" aria-selected="true">
+                                        <i class="icon icon-translate"></i>
+                                        {{ products.5.title }}
+                                      </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-11 col-sm-10 col-md-10 main-tabs-col">
+                            <div class="order--content__tabs">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-translate1" role="tabpanel"
+                                         aria-labelledby="v-pills-translate1-tab">
+                                        <!-- START TAB NAV & TABS -->
+                                        <!-- NAVS -->
+                                        <div class="w-100">
+                                            <div class="order--content__tabs__nav horizontal-nav">
+                                                <ul class="nav nav-pills justify-content-center justify-content-sm-start mb-3"
+                                                    id="pills-tab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="pills-translate1-explain-tab"
+                                                                data-bs-toggle="pill"
+                                                                data-bs-target="#pills-translate1-explain" type="button"
+                                                                role="tab" aria-controls="pills-translate1-explain"
+                                                                aria-selected="false">
+                                                            <i class="icon icon-solid-explain"></i>
+                                                            توضیحات
+                                                        </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="pills-translate1-order-tab"
+                                                                data-bs-toggle="pill"
+                                                                data-bs-target="#pills-translate1-order" type="button"
+                                                                role="tab" aria-controls="pills-translate1-order"
+                                                                aria-selected="false">
+                                                            <i class="icon icon-solid-order"></i>
+                                                            سفارش و قیمت
+                                                        </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active"
+                                                                id="pills-translate1-tokenisms-tab"
+                                                                data-bs-toggle="pill"
+                                                                data-bs-target="#pills-translate1-tokenisms"
+                                                                type="button" role="tab"
+                                                                aria-controls="pills-translate1-tokenisms"
+                                                                aria-selected="true">
+                                                            <i class="icon icon-solid-tokenisms"></i>
+                                                            نمونه کارها
+                                                        </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="pills-translate1-comments-tab"
+                                                                data-bs-toggle="pill"
+                                                                data-bs-target="#pills-translate1-comments"
+                                                                type="button" role="tab"
+                                                                aria-controls="pills-translate1-comments"
+                                                                aria-selected="false">
+                                                            <i class="icon icon-solid-comments"></i>
+                                                            نظرات مشتریان
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- TABS -->
+                                        <div class="order--content__tabs__tabs">
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <!-- Translate 1 Explain -->
+                                                <div class="tab-pane fade explain-tab" id="pills-translate1-explain"
+                                                     role="tabpanel" aria-labelledby="pills-translate1-explain-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="display-7 text-right pe-0">
+                                                                    <span class="display-7--description d-inline">
+                                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                                                                    </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="container-fluid py-3">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-12 col-md-7 pe-0 order-1 order-md-0">
+                                                                <h6 class="w-100 pe-0 text-primary">
+                                                                    ویراستاری شامل مجموعه های زیر میباشد
+                                                                </h6>
+                                                                <div class="container-fluid">
+                                                                    <div class="complex-list row">
+                                                                        <ul class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                                                            <li>مقاله نویسی</li>
+                                                                            <li>شعر نویسی</li>
+                                                                            <li>وبلاگ نویسی</li>
+                                                                            <li>داستان نویسی</li>
+                                                                        </ul>
+                                                                        <ul class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                                                            <li>ایمیل نویسی</li>
+                                                                            <li>کتاب نویسی</li>
+                                                                            <li>رمان نویسی</li>
+                                                                            <li>قرارداد نویسی</li>
+                                                                        </ul>
+                                                                        <ul class="col-4 col-sm-4 col-md-4 col-lg-4">
+                                                                            <li>مقاله نویسی</li>
+                                                                            <li>شعر نویسی</li>
+                                                                            <li>وبلاگ نویسی</li>
+                                                                            <li>داستان نویسی</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="more-info mb-2">
+                                                                    <a href="#"
+                                                                       class="text-warning text-decoration-none">اطلاعات
+                                                                        بیشتر +</a>
+                                                                </div>
+                                                                <div class="text-start ms-md-5">
+                                                                    <a href="#" class="btn btn-primary p-2">
+                                                                        قیمت گذاری ←
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-8 col-md-5 text-center mx-auto order-0 order-md-1 mb-5 mb-md-0">
+                                                                <img src="{% static 'img/explain.png' %}" class="img-fluid"
+                                                                     alt="توضیحات">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Translate 1 Order -->
+                                                <div class="tab-pane fade order-tab" id="pills-translate1-order"
+                                                     role="tabpanel" aria-labelledby="pills-translate1-order-tab">
+                                                    <div class="container-fluid">
+                                                        <form class="was-validated py-3 py-sm-5">
+                                                            <div class="row select-row justify-content-center justify-content-md-start mb-5 pe-3 pe-sm-0">
+                                                                <div class="col-sm-6 col-md-4 col-lg-3 pe-sm-0 mb-3">
+                                                                    <label class="form-label">زبان مبدأ</label>
+                                                                    <div id="myDropdown1">
+                                                                        <select id="demo-htmlselect1">
+                                                                        {% for choice in choices %}
+                                                                            <option value="0"
+                                                                                    data-imagesrc="{{ choice.image.url }}">
+                                                                                {{ choice.name }}
+                                                                            </option>
+                                                                        {% endfor %}
+
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-none d-lg-block col-lg-1"></div>
+                                                                <div class="col-sm-6 col-md-4 col-lg-3 pe-sm-0 mb-3">
+                                                                    <label class="form-label">زبان مقصد</label>
+                                                                    <div id="myDropdown2">
+                                                                        <select id="demo-htmlselect2">
+                                                                        {% for choice in choices %}
+                                                                            <option value="0"
+                                                                                    data-imagesrc="{{ choice.image.url }}">
+                                                                                {{ choice.name }}
+                                                                            </option>
+                                                                        {% endfor %}
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-none d-lg-block col-lg-1"></div>
+                                                                <div class="col-sm-6 col-md-4 col-lg-3 pe-sm-0 mb-3">
+                                                                    <label class="form-label">نوع موضوع</label>
+                                                                    <div id="myDropdown3">
+                                                                        <select id="demo-htmlselect3">
+                                                                        {% for title in titles  %}
+                                                                            <option value="0">{{ title.name }}</option>
+                                                                            {% endfor %}
+
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row select-row justify-content-center justify-content-md-start mb-5 pe-3 pe-sm-0">
+                                                                <div class="col-sm-6 col-md-4 col-lg-3 pe-sm-0 mb-3">
+                                                                    <label class="form-label">صفحه - کلمه</label>
+                                                                    <div id="myDropdown4">
+                                                                        <select id="demo-htmlselect4">
+                                                                            <option value="0">صفحه</option>
+                                                                            <option value="1">کلمه</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-none d-lg-block col-lg-1"></div>
+                                                                <div class="col-sm-6 col-md-4 col-lg-3 pe-sm-0 mb-3">
+                                                                    <label class="form-label">تعداد صفحه - کلمه</label>
+                                                                    <div id="myDropdown5">
+                                                                        <select id="demo-htmlselect5">
+                                                                            <option value="0">20</option>
+                                                                            <option value="1">50</option>
+                                                                            <option value="2">100</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-none d-lg-block col-lg-1"></div>
+                                                                <div class="col-sm-6 col-md-4 col-lg-3 pe-sm-0 mb-3">
+                                                                    <label class="form-label">شرایط</label>
+                                                                    <div id="myDropdown6">
+                                                                        <select id="demo-htmlselect6">
+                                                                            <option value="0">عجله دارم!!</option>
+                                                                            <option value="1">عادی</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-8 d-flex align-items-center pe-sm-0 mb-4 mb-sm-0">
+                                                                    <div class="order-calculate">
+                                                                        <button class="btn btn-warning rounded-pill">
+                                                                            محاسبه
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 pe-sm-0">
+                                                                    <div class="order-price d-flex align-items-center">
+                                                                        <h3>۲۵۰/۰۰۰</h3>
+                                                                        تومان
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mt-5">
+                                                                <div class="col-lg-4 d-flex pe-sm-0 order-2 order-lg-1">
+                                                                    <div class="delivery-time">
+                                                                        <div class="delivery-time--text text-warning">
+                                                                            <i class="icon icon-calendar"></i> زمان
+                                                                            تحویل:
+                                                                        </div>
+                                                                        <div class="delivery-time--description">
+                                                                            سه روز پس از ثبت سفارش
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 text-center pe-sm-0 mb-5 order-1">
+                                                                    <button class="btn btn-lg btn-primary rounded-pill blue-shadow m-0"
+                                                                            type="submit">
+                                                                        سفارش کار
+                                                                    </button>
+                                                                </div>
+                                                                <div class="col-lg-5 text-center pe-sm-0 order-3">
+                                                                    <img src="{% static 'img/time.png' %}" class="img-fluid"
+                                                                         alt="زمان تحویل">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Translate 1 Tokenisms -->
+                                                <div class="tab-pane fade show active tokenisms-tab"
+                                                     id="pills-translate1-tokenisms" role="tabpanel"
+                                                     aria-labelledby="pills-translate1-tokenisms-tab">
+                                                    <div class="container-fluid">
+                                                        <div class="row gy-4 pt-4 pt-md-5 justify-content-center">
+                                                            <div class="col-9 col-lg-4 col-sm-6 pe-sm-0">
+                                                                <div class="tokenism-card">
+                                                                    <a href="#">
+                                                                        <div class="tokenism-card--top">
+                                                                            <div class="tokenism-card--top__img">
+                                                                                <img src="{% static 'img/tokenism.png' %}"
+                                                                                     class="img-fluid"
+                                                                                     alt="نمونه کار ترجمه تخصصی انگلیسی">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <div class="tokenism-card--caption text-center">
+                                                                        <h5>
+                                                                            نمونه ترجمه تخصصی انگلیسی
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-9 col-lg-4 col-sm-6 pe-sm-0">
+                                                                <div class="tokenism-card">
+                                                                    <a href="#">
+                                                                        <div class="tokenism-card--top">
+                                                                            <div class="tokenism-card--top__img">
+                                                                                <img src="{% static 'img/tokenism.png' %}"
+                                                                                     class="img-fluid"
+                                                                                     alt="نمونه کار ترجمه تخصصی عربی">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <div class="tokenism-card--caption text-center">
+                                                                        <h5>
+                                                                            نمونه ترجمه تخصصی عربی
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-9 col-lg-4 col-sm-6 pe-sm-0">
+                                                                <div class="tokenism-card">
+                                                                    <a href="#">
+                                                                        <div class="tokenism-card--top">
+                                                                            <div class="tokenism-card--top__img">
+                                                                                <img src="{% static 'img/tokenism.png' %}"
+                                                                                     class="img-fluid"
+                                                                                     alt="نمونه کار ترجمه تخصصی اسپانیایی">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <div class="tokenism-card--caption text-center">
+                                                                        <h5>
+                                                                            نمونه ترجمه تخصصی اسپانیایی
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-9 col-lg-4 col-sm-6 pe-sm-0">
+                                                                <div class="tokenism-card">
+                                                                    <a href="#">
+                                                                        <div class="tokenism-card--top">
+                                                                            <div class="tokenism-card--top__img">
+                                                                                <img src="{% static 'img/tokenism.png' %}"
+                                                                                     class="img-fluid"
+                                                                                     alt="نمونه کار ترجمه تخصصی فرانسوی">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <div class="tokenism-card--caption text-center">
+                                                                        <h5>
+                                                                            نمونه ترجمه تخصصی فرانسوی
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-9 col-lg-4 col-sm-6 pe-sm-0">
+                                                                <div class="tokenism-card">
+                                                                    <a href="#">
+                                                                        <div class="tokenism-card--top">
+                                                                            <div class="tokenism-card--top__img">
+                                                                                <img src="{% static 'img/tokenism.png' %}"
+                                                                                     class="img-fluid"
+                                                                                     alt="نمونه کار ترجمه تخصصی آلمانی">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <div class="tokenism-card--caption text-center">
+                                                                        <h5>
+                                                                            نمونه ترجمه تخصصی آلمانی
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-9 col-lg-4 col-sm-6 pe-sm-0">
+                                                                <div class="tokenism-card">
+                                                                    <a href="#">
+                                                                        <div class="tokenism-card--top">
+                                                                            <div class="tokenism-card--top__img">
+                                                                                <img src="{% static 'img/tokenism.png' %}"
+                                                                                     class="img-fluid"
+                                                                                     alt="نمونه کار ترجمه تخصصی سایر">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <div class="tokenism-card--caption text-center">
+                                                                        <h5>
+                                                                            نمونه ترجمه تخصصی سایر
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="pills-translate1-comments"
+                                                     role="tabpanel" aria-labelledby="pills-translate1-comments-tab">...
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-read" role="tabpanel"
+                                         aria-labelledby="v-pills-read-tab">...
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-produce" role="tabpanel"
+                                         aria-labelledby="v-pills-produce-tab">...
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-write" role="tabpanel"
+                                         aria-labelledby="v-pills-write-tab">...
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-edit" role="tabpanel"
+                                         aria-labelledby="v-pills-edit-tab">...
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-translate2" role="tabpanel"
+                                         aria-labelledby="v-pills-translate2-tab">...
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ORDER SECTION -->
+
+    <!-- START LANGUAGES SECTION -->
+    <section class="languages py-5 mb-5">
+        <div class="container">
+            <!-- START SECTION TITLE -->
+            <div class="row text-center">
+                <h1 class="display-7 text-primary fw-bold">
+                        <span class="display-7--intro">
+                            زبان
+                        </span>
+                    <span class="display-7--sub px-2">
+                            زبان هایی که در آن تخصص داریم
+                        </span>
+                    <span class="display-7--description">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای
+                        </span>
+                </h1>
+            </div>
+
+            <div class="languages--cards row">
+                <div class="d-flex justify-content-center align-content-start flex-wrap">
+                    <div class="languages--cards__item text-center">
+                        <div class="languages--cards__item__top saudi-arabia">
+                            <div class="languages--cards__item__top__img">
+                                <img src="{% static 'img/flags/Saudi-Arabia.png' %}" class="img-fluid"
+                                     alt="عربستان سعودی، زبان عربی">
+                            </div>
+                        </div>
+                        <div class="languages--cards__item__bottom">
+                            <h5 class="fw-bold">عربی</h5>
+                            <div class="languages--cards__item__bottom__caption">العربي</div>
+                        </div>
+                    </div>
+                    <div class="languages--cards__item text-center">
+                        <div class="languages--cards__item__top canada">
+                            <div class="languages--cards__item__top__img">
+                                <img src="{% static 'img/flags/Canada.png' %}" class="img-fluid" alt="کانادا">
+                            </div>
+                        </div>
+                        <div class="languages--cards__item__bottom">
+                            <h5 class="fw-bold">کانادا</h5>
+                            <div class="languages--cards__item__bottom__caption">Canada</div>
+                        </div>
+                    </div>
+                    <div class="languages--cards__item text-center">
+                        <div class="languages--cards__item__top germany">
+                            <div class="languages--cards__item__top__img">
+                                <img src="{% static 'img/flags/Germany.png' %}" class="img-fluid" alt="آلمان، آلمانی">
+                            </div>
+                        </div>
+                        <div class="languages--cards__item__bottom">
+                            <h5 class="fw-bold">آلمانی</h5>
+                            <div class="languages--cards__item__bottom__caption">Deutsche</div>
+                        </div>
+                    </div>
+                    <div class="languages--cards__item text-center">
+                        <div class="languages--cards__item__top russia">
+                            <div class="languages--cards__item__top__img">
+                                <img src="{% static 'img/flags/Russia.png' %}" class="img-fluid" alt="روسیه، روسی">
+                            </div>
+                        </div>
+                        <div class="languages--cards__item__bottom">
+                            <h5 class="fw-bold">روسی</h5>
+                            <div class="languages--cards__item__bottom__caption">
+                                русский
+                            </div>
+                        </div>
+                    </div>
+                    <div class="languages--cards__item text-center">
+                        <div class="languages--cards__item__top france">
+                            <div class="languages--cards__item__top__img">
+                                <img src="{% static 'img/flags/France.png' %}" class="img-fluid" alt="فرانسه، فرانسوی">
+                            </div>
+                        </div>
+                        <div class="languages--cards__item__bottom">
+                            <h5 class="fw-bold">فرانسوی</h5>
+                            <div class="languages--cards__item__bottom__caption">
+                                français
+                            </div>
+                        </div>
+                    </div>
+                    <div class="languages--cards__item text-center">
+                        <div class="languages--cards__item__top united-states">
+                            <div class="languages--cards__item__top__img">
+                                <img src="{% static 'img/flags/United-States.png' %}" class="img-fluid" alt="آمریکا، آمریکایی">
+                            </div>
+                        </div>
+                        <div class="languages--cards__item__bottom">
+                            <h5 class="fw-bold">آمریکایی</h5>
+                            <div class="languages--cards__item__bottom__caption">America</div>
+                        </div>
+                    </div>
+                    <div class="languages--cards__item text-center">
+                        <div class="languages--cards__item__top united-kingdom">
+                            <div class="languages--cards__item__top__img">
+                                <img src="{% static 'img/flags/United-Kingdom.png' %}" class="img-fluid"
+                                     alt="انگلیس، انگلیسی، بریتانیایی">
+                            </div>
+                        </div>
+                        <div class="languages--cards__item__bottom">
+                            <h5 class="fw-bold">بریتانیایی</h5>
+                            <div class="languages--cards__item__bottom__caption">British</div>
+                        </div>
+                    </div>
+                    <div class="languages--cards__item text-center">
+                        <div class="languages--cards__item__top japan">
+                            <div class="languages--cards__item__top__img">
+                                <img src="{% static 'img/flags/Japan.png' %}" class="img-fluid" alt="ژاپن، ژاپنی">
+                            </div>
+                        </div>
+                        <div class="languages--cards__item__bottom">
+                            <h5 class="fw-bold">ژاپنی</h5>
+                            <div class="languages--cards__item__bottom__caption">
+                                日本
+                            </div>
+                        </div>
+                    </div>
+                    <div class="languages--cards__item text-center">
+                        <div class="languages--cards__item__top south-korea">
+                            <div class="languages--cards__item__top__img">
+                                <img src="{% static 'img/flags/South-Korea.png' %}" class="img-fluid" alt="کره جنوبی، کره ای">
+                            </div>
+                        </div>
+                        <div class="languages--cards__item__bottom">
+                            <h5 class="fw-bold">کره ای</h5>
+                            <div class="languages--cards__item__bottom__caption">
+                                한국어
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END LANGUAGES SECTION -->
+
+    <!-- START PRICE SECTION -->
+    <section class="price mt-5 py-5">
+        <div class="container">
+            <!-- START SECTION TITLE -->
+            <div class="row text-center">
+                <h1 class="display-7 text-primary fw-bold">
+                        <span class="display-7--intro">
+                            قیمت
+                        </span>
+                    <span class="display-7--sub px-2">
+                            نحوه قیمت گذاری در ترنسلیت فارست
+                        </span>
+                    <span class="display-7--description">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                        </span>
+                </h1>
+            </div>
+
+            <!-- START PRICE CARDS -->
+            <div class="price-cards row justify-content-center py-5">
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="price-cards--card border-top-card card-blue">
+                        <div class="price-cards--card__top">
+                            <div class="price-cards--card__top__caption">
+                                <h5 class="text-primary">
+                                    بخش مترجمی
+                                </h5>
+                                <p class="lh-lg">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                </p>
+                            </div>
+                            <div class="price-cards--card__top__price">
+                                <div class="price-amount fw-bold">
+                                    ۲۵۰
+                                </div>
+                                <div class="price-text">
+                                    تومان
+                                    <div class="price-for text-primary">برای هر کلمه</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-cards--card__bottom border-top-card__list px-xl-4 px-sm-0 px-md-4">
+                            <div class="cooperation__content__list">
+                                <ul class="benefits-list list-unstyled w-100">
+                                    <li>مالیات بر ارزش افزوده</li>
+                                    <li>برای هر صفحه ۸ % تخفیف</li>
+                                    <li>پشتیبانی ۲۴ ساعته</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="price-cards--card border-top-card card-green">
+                        <div class="price-cards--card__top">
+                            <div class="price-cards--card__top__caption">
+                                <h5 class="text-success">
+                                    بخش نویسندگی
+                                </h5>
+                                <p class="lh-lg">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                </p>
+                            </div>
+                            <div class="price-cards--card__top__price">
+                                <div class="price-amount fw-bold">
+                                    ۲۵۰
+                                </div>
+                                <div class="price-text">
+                                    تومان
+                                    <div class="price-for text-success">برای هر کلمه</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-cards--card__bottom border-top-card__list px-xl-4 px-sm-0 px-md-4">
+                            <div class="cooperation__content__list">
+                                <ul class="benefits-list list-unstyled w-100">
+                                    <li>مالیات بر ارزش افزوده</li>
+                                    <li>برای هر صفحه ۸ % تخفیف</li>
+                                    <li>پشتیبانی ۲۴ ساعته</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="price-cards--card border-top-card card-red">
+                        <div class="price-cards--card__top">
+                            <div class="price-cards--card__top__caption">
+                                <h5 class="text-danger">
+                                    بخش ویرایش
+                                </h5>
+                                <p class="lh-lg">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                </p>
+                            </div>
+                            <div class="price-cards--card__top__price">
+                                <div class="price-amount fw-bold">
+                                    ۲۵۰
+                                </div>
+                                <div class="price-text">
+                                    تومان
+                                    <div class="price-for text-danger">برای هر کلمه</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-cards--card__bottom border-top-card__list px-xl-4 px-sm-0 px-md-4">
+                            <div class="coooperation__content__list">
+                                <ul class="benefits-list list-unstyled w-100">
+                                    <li>مالیات بر ارزش افزوده</li>
+                                    <li>برای هر صفحه ۸ % تخفیف</li>
+                                    <li>پشتیبانی ۲۴ ساعته</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="price-cards--card border-top-card card-pink">
+                        <div class="price-cards--card__top">
+                            <div class="price-cards--card__top__caption">
+                                <h5 class="text-info">
+                                    بخش تولید محتوا
+                                </h5>
+                                <p class="lh-lg">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                </p>
+                            </div>
+                            <div class="price-cards--card__top__price">
+                                <div class="price-amount fw-bold">
+                                    ۲۵۰
+                                </div>
+                                <div class="price-text">
+                                    تومان
+                                    <div class="price-for text-info">برای هر کلمه</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-cards--card__bottom border-top-card__list px-xl-4 px-sm-0 px-md-4">
+                            <div class="cooperation__content__list">
+                                <ul class="benefits-list list-unstyled w-100">
+                                    <li>مالیات بر ارزش افزوده</li>
+                                    <li>برای هر صفحه ۸ % تخفیف</li>
+                                    <li>پشتیبانی ۲۴ ساعته</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END PRICE SECTION -->
+
+    <!-- START STATISTICS SECTION -->
+    <section class="statistics py-5">
+        <div class="container">
+            <div class="statistics-items row">
+                <div class="d-flex justify-content-center align-content-start flex-wrap">
+                    <div class="statistics-items--item text-center mx-4">
+                        <div class="statistics-items--item__shape">
+                            <div class="shape-wrapper">
+                                <i class="icon icon-brain-gear"></i>
+                            </div>
+                        </div>
+                        <div class="statistics-items--item__caption">
+                            <div class="statistics-items--item__caption__amount">
+                                ۲۵۰۰۰۰
+                            </div>
+                            <div class="statistics-items--item__caption__text">
+                                تعداد سفارشات
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statistics-items--item text-center mx-4">
+                        <div class="statistics-items--item__shape">
+                            <div class="shape-wrapper">
+                                <i class="icon icon-solid-briefcase"></i>
+                            </div>
+                        </div>
+                        <div class="statistics-items--item__caption">
+                            <div class="statistics-items--item__caption__amount">
+                                ۱۰۰
+                            </div>
+                            <div class="statistics-items--item__caption__text">
+                                تعداد مقالات
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statistics-items--item text-center mx-4">
+                        <div class="statistics-items--item__shape">
+                            <div class="shape-wrapper">
+                                <i class="icon icon-support-man"></i>
+                            </div>
+                        </div>
+                        <div class="statistics-items--item__caption">
+                            <div class="statistics-items--item__caption__amount">
+                                ۵۸
+                            </div>
+                            <div class="statistics-items--item__caption__text">
+                                تعداد اعضا
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statistics-items--item text-center mx-4">
+                        <div class="statistics-items--item__shape">
+                            <div class="shape-wrapper">
+                                <i class="icon icon-solid-complex"></i>
+                            </div>
+                        </div>
+                        <div class="statistics-items--item__caption">
+                            <div class="statistics-items--item__caption__amount">
+                                ۳۰۰
+                            </div>
+                            <div class="statistics-items--item__caption__text">
+                                تعداد عضویت مجموعه ترنسلیت
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END STATISTICS SECTION -->
+
+    <!-- START COOPERATION SECTION -->
+    <section id="cooperation" class="cooperation py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-10 col-sm-6 col-md-5 p-3 text-center align-self-center mx-auto">
+                    <div class="cooperation__vec">
+                        <img src="{% static 'img/cooperation.png' %}" class="img-fluid" alt="همکاری با ترنسلیت فارست">
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 p-5 pb-0">
+                    <div class="cooperation__content text-right">
+                        <h1 class="display-6 fw-bold text-right">
+                                <span class="display-6--intro">
+                              دعوت به همکاری
+                          </span>
+                            <span class="display-6--sub">
+                              چه ویژگی هایی ترجمه تخصصی بلوبری را متمایز می سازد؟
+                          </span>
+                            <span class="display-6--description lh-lg">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                          </span>
+                        </h1>
+                        <div class="cooperation__content__list">
+                            <ul class="benefits-list list-unstyled ms-sm-5">
+                                <li>ارتباط مستقیم با مترجم</li>
+                                <li>تحویل سریع در زمان مشخص شده</li>
+                                <li>پشتیبانی ۲۴ ساعته</li>
+                            </ul>
+                            <ul class="benefits-list list-unstyled">
+                                <li>تحویل تدریجی</li>
+                                <li>ضمانت کیفی ترجمه</li>
+                                <li>پرداخت اقساطی هزینه ترجمه</li>
+                            </ul>
+                        </div>
+                        <div class="cooperation__content__link text-center">
+                            <a class="btn btn-primary py-1 px-3" href="#">بخش همکاری</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END COOPERATION SECTION -->
+
+
+    <!-- START FAQ SECTION -->
+    <section class="faq py-5 mt-5">
+        <div class="container">
+            <!-- START SECTION TITLE -->
+            <div class="row text-center">
+                <h1 class="display-7 text-primary fw-bold">
+                        <span class="display-7--intro">
+                            پرسش
+                        </span>
+                    <span class="display-7--sub px-2">
+                            سوالات خود را میتوانید از ما بپرسید
+                        </span>
+                </h1>
+            </div>
+
+            <div class="faq-accordions row align-items-center py-4">
+                <div class="col-12 col-md-7 p-5 pb-0">
+                    <h5 class="text-warning fw-bold">سوالات متداول</h5>
+                    <div class="accordion main-accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                        aria-controls="flush-collapseOne">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ؟؟؟؟
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="lh-lg">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ؟؟؟؟و با استفاده از
+                                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                        لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ؟؟؟؟
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="lh-lg">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ؟؟؟؟و با استفاده از
+                                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                        لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ؟؟؟؟
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="lh-lg">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ؟؟؟؟و با استفاده از
+                                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                        لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ؟؟؟؟
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="lh-lg">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ؟؟؟؟و با استفاده از
+                                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                        لازم است، برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-6 col-md-5 p-3 text-center align-self-center mx-auto">
+                    <img src="{% static 'img/faq.png' %}" class="img-fluid" alt="سوالات متداول">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END FAQ SECTION -->
+
+    <!-- START COMMENTS SECTION -->
+    <section class="comments py-5 my-5">
+        <div class="container">
+            <div class="w-100 d-flex justify-content-end p-3">
+                <div class="rate">
+                    <div class="rate--text">
+                        از 46 رای
+                    </div>
+                    <div class="rate--box">
+                        <div class="rate--box__amount" dir="ltr">
+                            4.5 / 5
+                        </div>
+                        <div class="rate--box__stars rate-4">
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comments--box row">
+                <ul class="nav nav-pills mb-3" id="pills-tab2" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-users-comments-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-users-comments" type="button" role="tab"
+                                aria-controls="pills-users-comments" aria-selected="true">نظرات کاربران
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-add-comment-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-add-comment" type="button" role="tab"
+                                aria-controls="pills-add-comment" aria-selected="false">ثبت نظر
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content py-4" id="pills-tab2Content">
+                    <div class="tab-pane fade show active" id="pills-users-comments" role="tabpanel"
+                         aria-labelledby="pills-users-comments-tab">
+                        <div class="comments-wrapper">
+                            <div class="comment-wrapper">
+                                <div class="comment">
+                                    <div class="comment-pic d-none d-md-block">
+                                        <div class="comment-pic--wrapper d-none d-sm-block">
+                                            <img src="{% static 'img/user-1.svg" alt="عبدالله منصوری" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="comment-body">
+                                        <div class="comment-body--info">
+                                            <h6 class="fw-bold">عبدالله منصوری</h6>
+                                            <div class="comment-body--info__date">
+                                                <i class="icon icon-calendar-date"></i> تاریخ : ۱۳۷۹/۰۵/۰۳
+                                            </div>
+                                            <div class="comment-body--info__rate rate">
+                                                <div class="rate--box">
+                                                    <div class="rate--box__stars rate-4">
+                                                        <i class="icon icon-star"></i>
+                                                        <i class="icon icon-star"></i>
+                                                        <i class="icon icon-star"></i>
+                                                        <i class="icon icon-star"></i>
+                                                        <i class="icon icon-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-body--text">
+                                            <p class="lh-lg">
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+                                                از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                                                متنوع با
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-answers">
+                                    <div class="comment-answers--title">
+                                        <h6>پاسخ</h6>
+                                    </div>
+                                    <div class="comments-wrapper">
+                                        <div class="comment">
+                                            <div class="comment-pic d-none d-md-flex">
+                                                <div class="comment-pic--wrapper d-none d-sm-block">
+                                                    <img src="{% static 'img/user-2.svg" alt="منصور حیدری" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <div class="comment-body--info">
+                                                    <h6 class="fw-bold">منصور حیدری</h6>
+                                                    <div class="comment-body--info__date">
+                                                        <i class="icon icon-calendar-date"></i> تاریخ : ۱۳۷۹/۰۵/۰۳
+                                                    </div>
+                                                </div>
+                                                <div class="comment-body--text">
+                                                    <p class="lh-lg">
+                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                                        استفاده از
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-wrapper">
+                                <div class="comment">
+                                    <div class="comment-pic d-none d-md-block">
+                                        <div class="comment-pic--wrapper d-none d-sm-block">
+                                            <img src="{% static 'img/user-1.svg" alt="عبدالله منصوری" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="comment-body">
+                                        <div class="comment-body--info">
+                                            <h6 class="fw-bold">عبدالله منصوری</h6>
+                                            <div class="comment-body--info__date">
+                                                <i class="icon icon-calendar-date"></i> تاریخ : ۱۳۷۹/۰۵/۰۳
+                                            </div>
+                                            <div class="comment-body--info__rate rate">
+                                                <div class="rate--box">
+                                                    <div class="rate--box__stars rate-3">
+                                                        <i class="icon icon-star"></i>
+                                                        <i class="icon icon-star"></i>
+                                                        <i class="icon icon-star"></i>
+                                                        <i class="icon icon-star"></i>
+                                                        <i class="icon icon-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-body--text">
+                                            <p class="lh-lg">
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+                                                از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                                                متنوع با
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-answers">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-add-comment" role="tabpanel"
+                         aria-labelledby="pills-add-comment-tab">...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END COMMENTS SECTION -->
+
+    <!-- START TEAM SECTION -->
+    <section id="team" class="team">
+        <div class="container-fluid">
+            <div class="blue-layer"></div>
+        </div>
+    </section>
+    <!-- END TEAM SECTION -->
+
+    <!-- START CUSTOMERS SECTION -->
+    <section class="services-customers pt-5 pb-3">
+        <div class="container">
+            <!-- START SECTION TITLE -->
+            <div class="row text-center">
+                <h1 class="display-7 text-primary fw-bold">
+                        <span class="display-7--sub px-2">
+                            برخی از مشتریان ما
+                        </span>
+                </h1>
+            </div>
+
+            <div class="row py-5" dir="ltr">
+                <div class="lazy d-flex align-items-center">
+                    <div class="slide">
+                        <a href="#">
+                            <img src="{% static 'img/asre-jadid.png' %}" class="img-fluid" alt="عصر جدید">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="{% static 'img/almas.png' %}" class="img-fluid"
+                                 alt="شرکت مجتمع های تجاری الماس شرق سپاد خاوران">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="{% static 'img/arman.png' %}" class="img-fluid" alt="آرمان مدیران گیتی">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="{% static 'img/tanavob.png' %}" class="img-fluid" alt="تناوب صنعت سیراف">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="{% static 'img/asre-jadid.png' %}" class="img-fluid" alt="عصر جدید">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="{% static 'img/almas.png' %}" class="img-fluid"
+                                 alt="شرکت مجتمع های تجاری الماس شرق سپاد خاوران">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="{% static 'img/arman.png' %}" class="img-fluid" alt="آرمان مدیران گیتی">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="{% static 'img/tanavob.png' %}" class="img-fluid" alt="تناوب صنعت سیراف">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CUSTOMERS SECTION -->
+
+
+{% endblock %}
+{% block custom_js %}
+    <!-- BOOTSTRAP BUNDLE.js' %} -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="{% static 'panel/js/jquery.ddslick.min.js' %}"></script>
+    <!-- SLICK CAROUSEL -->
+    <script src="{% static 'panel/node_modules/slick-carousel/slick/slick.min.js' %}"></script>
+
+    <script>
+        for (let i = 1; i <= 10; i++) {
+            $(`#myDropdown${i}`).ddslick({
+                imagePosition: "right",
+                onSelected: function(selectedData) {
+                    //callback function: do something with selectedData;
+                }
+            });
+        }
+
+        // SLICK CAROUSEL
+        $('.lazy').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+{% endblock %}
