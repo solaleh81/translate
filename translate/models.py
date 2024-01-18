@@ -30,6 +30,8 @@ class TitleType(models.Model):
     def __str__(self):
         return self.name
 
+class ConditionType(models.Model):
+    name = models.CharField(max_length=100)
 
 class Order(models.Model):
 
@@ -42,21 +44,13 @@ class Order(models.Model):
             "2",
             "word",
         )
-    class ConditionType(models.TextChoices):
-        FORCE = (
-            "1",
-            "force",
-        )
-        NORMAL = (
-            "2",
-            "normal",
-        )
+
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='orders')
     choice_one = models.ForeignKey(Choice, on_delete=models.PROTECT, related_name='orders')
     title_type = models.ForeignKey(TitleType, on_delete=models.PROTECT, related_name='orders')
     page_word = models.CharField(max_length=1, choices=PageWord.choices)
     number_page_word = models.IntegerField()
-    condition = models.CharField(max_length=1, choices=ConditionType.choices)
+    condition = models.ForeignKey(ConditionType, on_delete=models.PROTECT, related_name='orders')
 
     @property
     def price(self):
