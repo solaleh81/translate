@@ -228,79 +228,135 @@
                                                 <div class="tab-pane fade order-tab" id="pills-translate1-order"
                                                      role="tabpanel" aria-labelledby="pills-translate1-order-tab">
                                                     <div class="container-fluid">
-                                                        <form class="was-validated py-3 py-sm-5">
+                                                        <form class="was-validated py-3 py-sm-5" method="POST" action="{% url 'create_order' %}">
+                                                        {% csrf_token %}
+                                                        {% if form.errors %}
+                                                         <div class="alert alert-danger">
+                                                          <p><strong>Please correct the following errors:</strong></p>
+                                                          <ul>
+                                                          {% for field, errors in form.errors.items %}
+                                                          {% for error in errors %}
+                                                          <li>{{ field|capfirst }}: {{ error }}</li>
+                                                          {% endfor %}
+                                                          {% endfor %}
+                                                            </ul>
+                                                          </div>
+                                                          {% endif %}
+
                                                             <div class="row select-row justify-content-center justify-content-md-start mb-5 pe-3 pe-sm-0">
-                                                                <div class="col-sm-6 col-md-4 col-lg-3 pe-sm-0 mb-3">
-                                                                    <label class="form-label">زبان مبدأ</label>
-                                                                    <div id="myDropdown1">
-                                                                        <select id="demo-htmlselect1">
-                                                                        {% for choice in choices %}
-                                                                            <option value="0"
-                                                                                    data-imagesrc="{{ choice.image.url }}">
-                                                                                {{ choice.name }}
-                                                                            </option>
-                                                                        {% endfor %}
 
-                                                                        </select>
-                                                                    </div>
+
+                                                                <div class="col-sm-6 col-md-4 col-lg-3 pe-sm-0 mb-3">
+                                                                <label>زبان اول</label>
+                                                                <select name="choice_one">
+                                                                {% for choice in choices1 %}
+                                                                <option value="{{ choice.id }}">
+                                                                {{ choice }}
+                                                                </option>
+                                                                {% endfor %}
+                                                                </select>
+                                                                </div>
+{#                                                                <label>زبان مبدا</label>#}
+{#                                                                <div id="myDropdown2">#}
+{#                                                                <select name="choice_one">#}
+{#                                                                {% for choice in choices1 %}#}
+{#                                                                <option value="{{ choice.id }}" data-imagesrc="{{ choice.image.url }}">#}
+{#                                                                {{ choice }}#}
+{#                                                                </option>#}
+{#                                                                {% endfor %}#}
+{#                                                                </select>#}
+{#                                                                </div>#}
+                                                                <div class="d-none d-lg-block col-lg-1"></div>
+
+                                                                <div class="col-sm-6 col-md-4 col-lg-3 pe-sm-0 mb-3">
+                                                                <label>زبان دوم</label>
+                                                                <select name="choice_two">
+                                                                {% for choice in choices2 %}
+                                                                <option value="{{ choice.id }}">
+                                                                {{ choice }}
+                                                                </option>
+                                                                {% endfor %}
+                                                                </select>
+{#                                                                    <label class="form-label">زبان مقصد</label>#}
+{#                                                                    <div id="myDropdown2">#}
+{#                                                                        <label for="demo-htmlselect2">choice_two</label><select id="demo-htmlselect2" name="choice_two">#}
+{#                                                                        {% for choice in choices2 %}#}
+{#                                                                            <option value="{{ choice.id }}"#}
+{#                                                                                    data-imagesrc="#">#}
+{#                                                                                {{ choice.name }}#}
+{#                                                                            </option>#}
+{#                                                                        {% endfor %}#}
+{#                                                                        </select>#}
+{#                                                                    </div>#}
                                                                 </div>
                                                                 <div class="d-none d-lg-block col-lg-1"></div>
                                                                 <div class="col-sm-6 col-md-4 col-lg-3 pe-sm-0 mb-3">
-                                                                    <label class="form-label">زبان مقصد</label>
-                                                                    <div id="myDropdown2">
-                                                                        <select id="demo-htmlselect2">
-                                                                        {% for choice in choices %}
-                                                                            <option value="0"
-                                                                                    data-imagesrc="{{ choice.image.url }}">
-                                                                                {{ choice.name }}
-                                                                            </option>
-                                                                        {% endfor %}
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="d-none d-lg-block col-lg-1"></div>
-                                                                <div class="col-sm-6 col-md-4 col-lg-3 pe-sm-0 mb-3">
-                                                                    <label class="form-label">نوع موضوع</label>
-                                                                    <div id="myDropdown3">
-                                                                        <select id="demo-htmlselect3">
-                                                                        {% for title in titles  %}
-                                                                            <option value="0">{{ title.name }}</option>
-                                                                            {% endfor %}
-
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
+                                                                <label>نوع موضوع</label>
+                                                                <select name="title_type">
+                                                                {% for title in titles %}
+                                                                <option value="{{ title.id }}">
+                                                                {{ title }}
+                                                                </option>
+                                                                {% endfor %}
+                                                                </select>
+{#                                                                    <label class="form-label">نوع موضوع</label>#}
+{#                                                                    <div id="myDropdown3" >#}
+{#                                                                        <label for="demo-htmlselect3">title_type</label><select id="demo-htmlselect3" name="title_type">#}
+{#                                                                        {% for title in titles  %}#}
+{#                                                                            <option value="{{ title.id }}">{{ title.name }}</option>#}
+{#                                                                        {% endfor %}#}
+{##}
+{#                                                                        </select>#}
+{#                                                                    </div>#}
+{#                                                                </div>#}
                                                             </div>
                                                             <div class="row select-row justify-content-center justify-content-md-start mb-5 pe-3 pe-sm-0">
+
                                                                 <div class="col-sm-6 col-md-4 col-lg-3 pe-sm-0 mb-3">
-                                                                    <label class="form-label">صفحه - کلمه</label>
-                                                                    <div id="myDropdown4">
-                                                                        <select id="demo-htmlselect4">
-                                                                            <option value="0">صفحه</option>
-                                                                            <option value="1">کلمه</option>
-                                                                        </select>
-                                                                    </div>
+                                                                <label>صفحه - کلمه</label>
+                                                                <select name="page_word">
+                                                                <option value="1">صفحه</option>
+                                                                <option value="2">کلمه</option>
+                                                                </select>
+{#                                                                    <label class="form-label">صفحه - کلمه</label>#}
+{#                                                                    <div id="myDropdown4">#}
+{#                                                                        <select id="demo-htmlselect4" name="page_word">#}
+{#                                                                            <option value="0">صفحه</option>#}
+{#                                                                            <option value="1">کلمه</option>#}
+{#                                                                        </select>#}
+{#                                                                    </div>#}
                                                                 </div>
                                                                 <div class="d-none d-lg-block col-lg-1"></div>
                                                                 <div class="col-sm-6 col-md-4 col-lg-3 pe-sm-0 mb-3">
-                                                                    <label class="form-label">تعداد صفحه - کلمه</label>
-                                                                    <div id="myDropdown5">
-                                                                        <select id="demo-htmlselect5">
-                                                                            <option value="0">20</option>
-                                                                            <option value="1">50</option>
-                                                                            <option value="2">100</option>
-                                                                        </select>
-                                                                    </div>
+                                                                <label>تعداد صفحه - کلمه</label>
+                                                                 <input name="number_page_word">
+{#                                                                    <label class="form-label">تعداد صفحه - کلمه</label>#}
+{#                                                                    <div id="myDropdown5">#}
+{#                                                                        <select id="demo-htmlselect5" name="number_page_word">#}
+{#                                                                            <option value="0">20</option>#}
+{#                                                                            <option value="1">50</option>#}
+{#                                                                            <option value="2">100</option>#}
+{#                                                                        </select>#}
+{#                                                                    </div>#}
                                                                 </div>
                                                                 <div class="d-none d-lg-block col-lg-1"></div>
                                                                 <div class="col-sm-6 col-md-4 col-lg-3 pe-sm-0 mb-3">
-                                                                    <label class="form-label">شرایط</label>
-                                                                    <div id="myDropdown6">
-                                                                        <select id="demo-htmlselect6">
-                                                                            <option value="0">عجله دارم!!</option>
-                                                                            <option value="1">عادی</option>
-                                                                        </select>
-                                                                    </div>
+                                                                <label>شرایط</label>
+                                                                <select name="condition">
+                                                                {% for condition in conditions %}
+                                                                <option value="{{ condition.id }}">
+                                                                {{ condition }}
+                                                                </option>
+                                                                {% endfor %}
+                                                                </select>
+{#                                                                    <label class="form-label">شرایط</label>#}
+{#                                                                    <div id="myDropdown6">#}
+{#                                                                        <select id="demo-htmlselect6" name="condition">#}
+{#                                                                        {% for condition in conditions %}#}
+{#                                                                            <option value="{{ condition.id }}"> {{ condition.name }} </option>#}
+{#                                                                        {% endfor %}#}
+{#                                                                        </select>#}
+{#                                                                    </div>#}
                                                                 </div>
                                                             </div>
                                                             <div class="row">
@@ -332,8 +388,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-lg-3 text-center pe-sm-0 mb-5 order-1">
-                                                                    <button class="btn btn-lg btn-primary rounded-pill blue-shadow m-0"
-                                                                            type="submit">
+                                                                    <button type="submit">
                                                                         سفارش کار
                                                                     </button>
                                                                 </div>
@@ -342,6 +397,12 @@
                                                                          alt="زمان تحویل">
                                                                 </div>
                                                             </div>
+                                                            {% if form.errors %}
+                                                        <div class="alert alert-danger">
+                                                            <strong>Error!</strong> Please correct the errors below.
+                                                            {{ form.errors }}
+                                                        </div>
+                                                        {% endif %}
                                                         </form>
                                                     </div>
                                                 </div>
@@ -1052,7 +1113,7 @@
                                 <div class="comment">
                                     <div class="comment-pic d-none d-md-block">
                                         <div class="comment-pic--wrapper d-none d-sm-block">
-                                            <img src="{% static 'img/user-1.svg" alt="عبدالله منصوری" class="img-fluid">
+                                            <img src="{% static 'img/user-1.svg' %}" alt="عبدالله منصوری" class="img-fluid">
                                         </div>
                                     </div>
                                     <div class="comment-body">
@@ -1091,7 +1152,7 @@
                                         <div class="comment">
                                             <div class="comment-pic d-none d-md-flex">
                                                 <div class="comment-pic--wrapper d-none d-sm-block">
-                                                    <img src="{% static 'img/user-2.svg" alt="منصور حیدری" class="img-fluid">
+                                                    <img src="{% static 'img/user-2.svg' %}" alt="منصور حیدری" class="img-fluid">
                                                 </div>
                                             </div>
                                             <div class="comment-body">
@@ -1116,7 +1177,7 @@
                                 <div class="comment">
                                     <div class="comment-pic d-none d-md-block">
                                         <div class="comment-pic--wrapper d-none d-sm-block">
-                                            <img src="{% static 'img/user-1.svg" alt="عبدالله منصوری" class="img-fluid">
+                                            <img src="{% static 'img/user-1.svg' %}" alt="عبدالله منصوری" class="img-fluid">
                                         </div>
                                     </div>
                                     <div class="comment-body">
@@ -1236,6 +1297,7 @@
 {% endblock %}
 {% block custom_js %}
     <!-- BOOTSTRAP BUNDLE.js' %} -->
+    <script src="{% static 'panel/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="{% static 'panel/js/jquery.ddslick.min.js' %}"></script>
     <!-- SLICK CAROUSEL -->
