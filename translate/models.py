@@ -4,8 +4,6 @@ from persiantools import jdatetime
 from datetime import datetime  # Import the datetime module
 
 
-
-
 class Product(models.Model):
     title = models.CharField(max_length=100)
     caption = models.TextField()
@@ -16,7 +14,15 @@ class Product(models.Model):
         return self.title
 
 
-class Choice(models.Model):
+class ChoiceOne(models.Model):
+    name = models.CharField(max_length=100)
+    image = models.ImageField(null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+
+class ChoiceTwo(models.Model):
     name = models.CharField(max_length=100)
     image = models.ImageField(null=True, blank=True)
 
@@ -30,11 +36,15 @@ class TitleType(models.Model):
     def __str__(self):
         return self.name
 
+
 class ConditionType(models.Model):
     name = models.CharField(max_length=100)
 
-class Order(models.Model):
+    def __str__(self):
+        return self.name
 
+
+class Order(models.Model):
     class PageWord(models.TextChoices):
         PAGE = (
             "1",
@@ -45,17 +55,22 @@ class Order(models.Model):
             "word",
         )
 
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='orders')
-    choice_one = models.ForeignKey(Choice, on_delete=models.PROTECT, related_name='orders')
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='orders', blank=True, null=True)
+    choice_one = models.ForeignKey(ChoiceOne, on_delete=models.PROTECT, related_name='orders')
+    choice_two = models.ForeignKey(ChoiceTwo, on_delete=models.PROTECT, related_name='orders')
     title_type = models.ForeignKey(TitleType, on_delete=models.PROTECT, related_name='orders')
     page_word = models.CharField(max_length=1, choices=PageWord.choices)
     number_page_word = models.IntegerField()
     condition = models.ForeignKey(ConditionType, on_delete=models.PROTECT, related_name='orders')
+    price = models.IntegerField(null=True, blank=True, default=0)
 
     @property
-    def price(self):
+    def price_calculate(self):
         price = self.page_word * self.number_page_word
         return price
+
+    # def __str__(self):
+    #     return f"{self.product.title}-{self.}"
 
 class Weblog(models.Model):
     image = models.ImageField(null=True, blank=True)
@@ -91,4 +106,3 @@ class Weblog(models.Model):
 
     def __str__(self):
         return self.title
-
