@@ -48,27 +48,22 @@
                             {% csrf_token %}
 
                             {% if messages %}
-                                <ul class="messages">
-                                    {% for message in messages %}
-                                        <li{% if message.tags %}
-                                            class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                                {% for message in messages %}
+                                    <div class="alert {% if message.tags %} alert-{{ message.tags }}{% endif %}">{{ message|safe }}</div>
+                                {% endfor %}
+                            {% endif %}
+
+                            <div class="alert alert-danger">
+                                <ul>
+                                    {% for field, errors in form.errors.items %}
+                                        {% if forloop.first %}
+                                            {% for error in errors %}
+                                                <li>{{ error }}</li>
+                                            {% endfor %}
+                                        {% endif %}
                                     {% endfor %}
                                 </ul>
-                            {% endif %}
-                            {% if form.errors %}
-
-                                <div class="alert alert-danger">
-                                    <ul>
-                                        {% for field, errors in form.errors.items %}
-                                            {% if forloop.first %}
-                                                {% for error in errors %}
-                                                    <li>{{ error }}</li>
-                                                {% endfor %}
-                                            {% endif %}
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                            {% endif %}
+                            </div>
                             <div class="signup--wrapper__form__input-group mb-4">
                                 <label for="uName">شماره موبایل یا ایمیل</label>
                                 <div class="input-group signup--wrapper__form__input-group__all">
@@ -118,6 +113,7 @@
 
 
                     </div>
+
                     <div class="form__container__bottom text-center">
                         <div class="login">
                             قبلا ثبت نام کردی؟! <a href="#" class="text-primary">ورود به سایت</a>
